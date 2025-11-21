@@ -49,8 +49,8 @@ export const clients: Client[] = [
     ],
     logos: [
       { label: 'Primary Logo', src: '/Besportify.jpg' },
-      { label: 'Badge / Icon', src: '/Besportify.jpg' },
-      { label: 'Pattern System', src: '/Besportify.jpg' }
+      { label: 'Badge / Icon', src: '/Besportify/Gemini_Generated_Image_nopjkfnopjkfnopj.png' },
+      { label: 'Pattern System', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png' }
     ],
     mockupGroups: [
       {
