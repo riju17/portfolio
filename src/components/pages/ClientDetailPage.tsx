@@ -26,6 +26,7 @@ export default function ClientDetailPage({ client }: Props) {
     title: string;
     items: { title?: string; label?: string; src: string }[];
   } | null>(null);
+  const [focusedAsset, setFocusedAsset] = useState<{ heading: string; label: string; src: string } | null>(null);
   const patternAlbum = client.patternSystemAlbum ?? [];
   const iconBadgeAlbum = client.iconBadgeAlbum ?? [];
   const albumConfig: Record<AlbumType, AlbumConfig> = {
@@ -89,6 +90,8 @@ export default function ClientDetailPage({ client }: Props) {
               const handleOpen = () => {
                 if (albumType) {
                   setActiveAlbum(albumType);
+                } else if (logo.src) {
+                  setFocusedAsset({ heading: `${logo.label}`, label: logo.label, src: logo.src });
                 }
               };
               return (
@@ -96,11 +99,11 @@ export default function ClientDetailPage({ client }: Props) {
                   key={logo.label}
                   whileHover={{ scale: 1.03 }}
                   className="rounded-2xl bg-white/80 p-4"
-                  role={albumType ? 'button' : undefined}
-                  tabIndex={albumType ? 0 : undefined}
-                  onClick={albumType ? handleOpen : undefined}
+                  role={albumType || logo.src ? 'button' : undefined}
+                  tabIndex={albumType || logo.src ? 0 : undefined}
+                  onClick={albumType || logo.src ? handleOpen : undefined}
                   onKeyDown={
-                    albumType
+                    albumType || logo.src
                       ? (event) => {
                           if (event.key === 'Enter' || event.key === ' ') {
                             event.preventDefault();
@@ -167,7 +170,13 @@ export default function ClientDetailPage({ client }: Props) {
           ) : (
             <div className="grid gap-6 md:grid-cols-3">
               {client.mockups.map((mockup) => (
-                <div key={mockup.title} className="rounded-2xl border border-black/10 bg-white/80 p-4">
+                <button
+                  key={mockup.title}
+                  type="button"
+                  className="rounded-2xl border border-black/10 bg-white/80 p-4 text-left"
+                  onClick={mockup.src ? () => setFocusedAsset({ heading: 'Mockup', label: mockup.title, src: mockup.src! }) : undefined}
+                  disabled={!mockup.src}
+                >
                   <p className="text-sm uppercase tracking-[0.3em] text-black/50">{mockup.title}</p>
                   <div className="relative mt-3 aspect-video overflow-hidden rounded-xl">
                     {mockup.src ? (
@@ -178,7 +187,7 @@ export default function ClientDetailPage({ client }: Props) {
                       </div>
                     )}
                   </div>
-                </div>
+                </button>
               ))}
             </div>
           )}
@@ -295,7 +304,13 @@ export default function ClientDetailPage({ client }: Props) {
               </div>
               <div className="mt-6 grid gap-6 md:grid-cols-2">
                 {activeMockupGroup.items.map((item) => (
-                  <div key={item.title ?? item.label ?? item.src} className="rounded-2xl border border-black/10 bg-white/90 p-4 shadow-sm">
+                  <button
+                    key={item.title ?? item.label ?? item.src}
+                    type="button"
+                    className="rounded-2xl border border-black/10 bg-white/90 p-4 shadow-sm text-left"
+                    onClick={item.src ? () => setFocusedAsset({ heading: activeMockupGroup.title, label: item.title ?? item.label ?? activeMockupGroup.title, src: item.src }) : undefined}
+                    disabled={!item.src}
+                  >
                     <div className="relative aspect-[4/3] overflow-hidden rounded-xl">
                       {item.src ? (
                         <Image src={item.src} alt={item.title ?? item.label ?? activeMockupGroup.title} fill className="object-cover" sizes="480px" />
@@ -306,8 +321,45 @@ export default function ClientDetailPage({ client }: Props) {
                       )}
                     </div>
                     <p className="mt-3 text-sm font-semibold">{item.title ?? item.label ?? activeMockupGroup.title}</p>
-                  </div>
+                  </button>
                 ))}
+              </div>
+            </motion.div>
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
+      <AnimatePresence>
+        {focusedAsset ? (
+          <motion.div
+            className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 px-4 py-10"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            onClick={() => setFocusedAsset(null)}
+          >
+            <motion.div
+              className="relative max-h-full w-full max-w-3xl overflow-hidden rounded-3xl bg-white p-6 shadow-2xl"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: 20 }}
+              transition={{ duration: 0.2 }}
+              onClick={(event) => event.stopPropagation()}
+            >
+              <div className="flex items-center justify-between gap-4">
+                <div>
+                  <p className="text-sm uppercase tracking-[0.4em] text-black/50">{focusedAsset.heading}</p>
+                  <h3 className="text-3xl font-display">{focusedAsset.label}</h3>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setFocusedAsset(null)}
+                  className="rounded-full border border-black/20 px-4 py-2 text-sm font-semibold uppercase tracking-[0.3em] text-black/70 transition hover:bg-black/5"
+                >
+                  Close
+                </button>
+              </div>
+              <div className="relative mt-6 aspect-square w-full overflow-hidden rounded-2xl border border-black/10 bg-white">
+                <Image src={focusedAsset.src} alt={focusedAsset.label} fill className="object-contain p-4" sizes="600px" />
               </div>
             </motion.div>
           </motion.div>
