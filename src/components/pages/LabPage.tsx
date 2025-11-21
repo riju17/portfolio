@@ -16,7 +16,10 @@ type Props = {
 export default function LabPage({ projects }: Props) {
   const [activeGenre, setActiveGenre] = useState('All');
 
-  const genres = useMemo(() => ['All', ...new Set(projects.map((project) => project.genre))], [projects]);
+  const genres = useMemo(() => {
+    const uniqueGenres = Array.from(new Set(projects.map((project) => project.genre)));
+    return ['All', ...uniqueGenres];
+  }, [projects]);
   const filtered = useMemo(
     () => (activeGenre === 'All' ? projects : projects.filter((project) => project.genre === activeGenre)),
     [activeGenre, projects]
