@@ -29,19 +29,19 @@ export type Client = {
 
 export const clients: Client[] = [
  {
-    slug: 'sportify-2165',
-    name: 'Sportify 2165',
+    slug: 'Besportify',
+    name: 'Besportify',
     shortDescription: 'Grassroots sports storytelling packaged for YouTube & social.',
-    year: '2023–2025',
+    year: '2021–Present',
     services: ['Analysis', 'Editorial', 'Digital', 'Sports Graphics'],
     tools: ['Figma', 'Photoshop', 'Illustrator', 'After Effects', 'Premiere Pro'],
     heroImage: '/Besportify.jpg',
     palette: [
-      { name: 'Team Blue', hex: '#1F5FFF' },
-      { name: 'Pitch Green', hex: '#0E7C52' },
-      { name: 'Off-White Chalk', hex: '#F4F4F1' },
-      { name: 'Midnight Slate', hex: '#0D0E11' },
-      { name: 'Victory Yellow', hex: '#F4C542' }
+      { name: 'Red', hex: '#E4002B' },
+      { name: 'Black', hex: '#000000' },
+      { name: 'White', hex: '#FFFFFF' },
+      { name: 'Soft Red', hex: '#FF6B6B' },
+      { name: 'Silver', hex: '#CCCCCC' }
     ],
     typography: [
       { label: 'Display', family: 'Bebas Neue / Anton', sample: 'SPORTIFY 2165' },
@@ -52,12 +52,43 @@ export const clients: Client[] = [
       { label: 'Badge / Icon', src: '/Besportify.jpg' },
       { label: 'Pattern System', src: '/Besportify.jpg' }
     ],
-    mockups: [
-      { title: 'YouTube Banner', src: '' },
-      { title: 'Thumbnail Grid', src: '' },
-      { title: 'Scorecard Graphics Pack', src: '' },
-      { title: 'Motion Kit', src: '' },
-      { title: 'Match Breakdown Templates', src: '' }
+    mockupGroups: [
+      {
+        title: 'UI mockups',
+        items: [
+          { title: 'Dashboard Overview', src: '/Besportify/UI mockups/Gemini_Generated_Image_9xjiij9xjiij9xji.png' },
+          { title: 'Player Profile', src: '/Besportify/UI mockups/Gemini_Generated_Image_ajzg80ajzg80ajzg.png' },
+          { title: 'Match Insights', src: '/Besportify/UI mockups/Gemini_Generated_Image_btaf8hbtaf8hbtaf.png' },
+          { title: 'Mobile Screens', src: '/Besportify/UI mockups/Gemini_Generated_Image_hosa40hosa40hosa.png' }
+        ]
+      },
+      {
+        title: 'Pattern System',
+        items: [
+          { title: 'Primary Pattern', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png' },
+          { title: 'Diagonal Grid', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-2.png' },
+          { title: 'Contrast Motif', src: '/Besportify/Pattern System/Gemini_Generated_Image_jt7mcjjt7mcjjt7m.png' },
+          { title: 'Texture Variant', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-3.png' }
+        ]
+      },
+      {
+        title: 'Printables mockups',
+        items: [
+          { title: 'Flyer Stack', src: '/Besportify/Printables mockups/Gemini_Generated_Image_cw4czrcw4czrcw4c.png' },
+          { title: 'Poster Set', src: '/Besportify/Printables mockups/Gemini_Generated_Image_ocx239ocx239ocx2.png' },
+          { title: 'Tickets', src: '/Besportify/Printables mockups/Gemini_Generated_Image_sxkm5wsxkm5wsxkm.png' },
+          { title: 'Event Badges', src: '/Besportify/Printables mockups/Gemini_Generated_Image_triklbtriklbtrik.png' }
+        ]
+      },
+      {
+        title: 'Merch',
+        items: [
+          { title: 'Jersey Concept', src: '/Besportify/Merch /Gemini_Generated_Image_qo2sqbqo2sqbqo2s.png' },
+          { title: 'Cap + Scarf', src: '/Besportify/Merch /Gemini_Generated_Image_sc4gsssc4gsssc4g.png' },
+          { title: 'Stadium Merch Table', src: '/Besportify/Merch /Gemini_Generated_Image_dysjcjdysjcjdysj.png' },
+          { title: 'Hoodie Lockup', src: '/Besportify/Merch /Gemini_Generated_Image_c6l6suc6l6suc6l6.png' }
+        ]
+      }
     ],
     story: {
       context:
@@ -90,7 +121,7 @@ export const clients: Client[] = [
       { label: 'Body', family: 'Inter / Space Grotesk', sample: 'Subtitles and descriptions for digital viewers.' }
     ],
     logos: [
-      { label: 'Primary Logo', src: '/Kalam Katha/Gemini_Generated_Image_z4ma1kz4ma1kz4ma.png' },
+      { label: 'Primary Logo', src: '/kalamkatha.PNG' },
       { label: 'Icon / Badge', src: '/Kalam Katha/Gemini_Generated_Image_7fzulc7fzulc7fzu.png' },
       { label: 'Pattern System', src: '/Kalam Katha/Gemini_Generated_Image_4fu71e4fu71e4fu7.png' }
     ],
