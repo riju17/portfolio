@@ -49,8 +49,40 @@ export const clients: Client[] = [
     ],
     logos: [
       { label: 'Primary Logo', src: '/Besportify.jpg' },
-      { label: 'Badge / Icon', src: '/Besportify/Gemini_Generated_Image_nopjkfnopjkfnopj.png' },
+      { label: 'Badge / Icon', src: '/Besportify/stick figure.png' },
       { label: 'Pattern System', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png' }
+    ],
+    patternSystemAlbum: [
+      {
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png',
+        label: 'Pattern 01 · Hero Net',
+        description: 'Flagship weave used across hero frames and broadcast backgrounds.'
+      },
+      {
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-2.png',
+        label: 'Pattern 02 · Diagonal Grid',
+        description: 'Sharp diagonal grid that nods to court markings and fast play.'
+      },
+      {
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_jt7mcjjt7mcjjt7m.png',
+        label: 'Pattern 03 · Contrast Motif',
+        description: 'High-contrast motif for jersey inserts, stickers, and motion wipes.'
+      },
+      {
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-3.png',
+        label: 'Pattern 04 · Texture Variant',
+        description: 'Matte texture layer that adds tactile depth to social templates.'
+      },
+      {
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-4.png',
+        label: 'Pattern 05 · Gradient Pulse',
+        description: 'Diagonal gradient pulse for highlight slates and scoreboard wipes.'
+      },
+      {
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-5.png',
+        label: 'Pattern 06 · Stadium Wave',
+        description: 'Curving wave referencing stadium crowd energy and chants.'
+      }
     ],
     mockupGroups: [
       {
