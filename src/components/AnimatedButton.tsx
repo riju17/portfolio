@@ -23,8 +23,6 @@ export default function AnimatedButton({
   href,
   children,
   variant = 'primary',
-  onMouseEnter,
-  onMouseLeave,
   ...props
 }: AnimatedButtonProps) {
   const className = `cursor-peek inline-flex items-center justify-center rounded-full px-6 py-3 text-sm font-semibold uppercase tracking-wide transition ${variantClasses[variant]}`;
@@ -34,8 +32,6 @@ export default function AnimatedButton({
       <motion.div
         whileHover={{ y: -2, scale: 1.03 }}
         whileTap={{ scale: 0.98 }}
-        onMouseEnter={onMouseEnter}
-        onMouseLeave={onMouseLeave}
       >
         <Link href={href} className={className}>
           {children}
@@ -49,8 +45,6 @@ export default function AnimatedButton({
       whileHover={{ y: -2, scale: 1.03 }}
       whileTap={{ scale: 0.98 }}
       className={className}
-      onMouseEnter={onMouseEnter}
-      onMouseLeave={onMouseLeave}
       {...props}
     >
       {children}
