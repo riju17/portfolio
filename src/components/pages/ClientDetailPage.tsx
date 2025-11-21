@@ -86,12 +86,9 @@ export default function ClientDetailPage({ client }: Props) {
                 albumType = 'icon';
               }
               const previewSrc = albumType ? albumConfig[albumType].items[0]?.src : undefined;
-              const canOpenPreview = !albumType && Boolean(logo.src);
               const handleOpen = () => {
                 if (albumType) {
                   setActiveAlbum(albumType);
-                } else if (canOpenPreview && logo.src) {
-                  setFocusedAsset({ heading: 'Logo preview', label: logo.label, src: logo.src });
                 }
               };
               return (
@@ -99,11 +96,11 @@ export default function ClientDetailPage({ client }: Props) {
                   key={logo.label}
                   whileHover={{ scale: 1.03 }}
                   className="rounded-2xl bg-white/80 p-4"
-                  role={albumType || canOpenPreview ? 'button' : undefined}
-                  tabIndex={albumType || canOpenPreview ? 0 : undefined}
-                  onClick={albumType || canOpenPreview ? handleOpen : undefined}
+                  role={albumType ? 'button' : undefined}
+                  tabIndex={albumType ? 0 : undefined}
+                  onClick={albumType ? handleOpen : undefined}
                   onKeyDown={
-                    albumType || canOpenPreview
+                    albumType
                       ? (event) => {
                           if (event.key === 'Enter' || event.key === ' ') {
                             event.preventDefault();
