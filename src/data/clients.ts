@@ -67,17 +67,6 @@ export const clients: Client[] = [
         ]
       },
       {
-        title: 'Pattern System',
-        items: [
-          { title: 'Primary Pattern', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png' },
-          { title: 'Diagonal Grid', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-2.png' },
-          { title: 'Contrast Motif', src: '/Besportify/Pattern System/Gemini_Generated_Image_jt7mcjjt7mcjjt7m.png' },
-          { title: 'Texture Variant', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-3.png' },
-          { title: 'Gradient Layer', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-4.png' },
-          { title: 'Stadium Wave', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-5.png' }
-        ]
-      },
-      {
         title: 'Printables mockups',
         items: [
           { title: 'Flyer Stack', src: '/Besportify/Printables mockups/Gemini_Generated_Image_cw4czrcw4czrcw4c.png' },
