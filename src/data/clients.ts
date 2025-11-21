@@ -90,15 +90,15 @@ export const clients: Client[] = [
       { label: 'Body', family: 'Inter / Space Grotesk', sample: 'Subtitles and descriptions for digital viewers.' }
     ],
     logos: [
-      { label: 'Primary Logo', src: '/kalamkatha.PNG' },
-      { label: 'Icon / Badge', src: '/kalamkatha.PNG' },
-      { label: 'Pattern System', src: '/kalamkatha.PNG' }
+      { label: 'Primary Logo', src: '/Kalam Katha/Gemini_Generated_Image_z4ma1kz4ma1kz4ma.png' },
+      { label: 'Icon / Badge', src: '/Kalam Katha/Gemini_Generated_Image_7fzulc7fzulc7fzu.png' },
+      { label: 'Pattern System', src: '/Kalam Katha/Gemini_Generated_Image_4fu71e4fu71e4fu7.png' }
     ],
     mockups: [
-      { title: 'YouTube Banner', src: '' },
-      { title: 'Thumbnail System', src: '' },
-      { title: 'Motion Sticker Pack', src: '' },
-      { title: 'Social Kit Templates', src: '' }
+      { title: 'Story Gallery', src: '/Kalam Katha/Gemini_Generated_Image_j0vwxcj0vwxcj0vw.png' },
+      { title: 'Chapter Card', src: '/Kalam Katha/Gemini_Generated_Image_j0vwxcj0vwxcj0vw copy.png' },
+      { title: 'Motion Sticker Pack', src: '/Kalam Katha/Gemini_Generated_Image_w38hjcw38hjcw38h.png' },
+      { title: 'Social Kit Templates', src: '/Kalam Katha/Gemini_Generated_Image_p2v0jzp2v0jzp2v0.png' }
     ],
     story: {
       context: 'Kalam Katha shares traditional Indian stories across YouTube, Shorts, and social feeds.',
