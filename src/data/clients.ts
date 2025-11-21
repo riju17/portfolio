@@ -57,9 +57,13 @@ export const clients: Client[] = [
         title: 'UI mockups',
         items: [
           { title: 'Dashboard Overview', src: '/Besportify/UI mockups/Gemini_Generated_Image_9xjiij9xjiij9xji.png' },
+          { title: 'Dashboard Variation', src: '/Besportify/UI mockups/Gemini_Generated_Image_9xjiij9xjiij9xji-2.png' },
           { title: 'Player Profile', src: '/Besportify/UI mockups/Gemini_Generated_Image_ajzg80ajzg80ajzg.png' },
           { title: 'Match Insights', src: '/Besportify/UI mockups/Gemini_Generated_Image_btaf8hbtaf8hbtaf.png' },
-          { title: 'Mobile Screens', src: '/Besportify/UI mockups/Gemini_Generated_Image_hosa40hosa40hosa.png' }
+          { title: 'Live Tracker', src: '/Besportify/UI mockups/Gemini_Generated_Image_h4irz9h4irz9h4ir.png' },
+          { title: 'Mobile Screens', src: '/Besportify/UI mockups/Gemini_Generated_Image_hosa40hosa40hosa.png' },
+          { title: 'Lineup Panel', src: '/Besportify/UI mockups/Gemini_Generated_Image_lpne9tlpne9tlpne.png' },
+          { title: 'Schedule Grid', src: '/Besportify/UI mockups/Gemini_Generated_Image_mpnyrdmpnyrdmpny.png' }
         ]
       },
       {
@@ -68,7 +72,9 @@ export const clients: Client[] = [
           { title: 'Primary Pattern', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png' },
           { title: 'Diagonal Grid', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-2.png' },
           { title: 'Contrast Motif', src: '/Besportify/Pattern System/Gemini_Generated_Image_jt7mcjjt7mcjjt7m.png' },
-          { title: 'Texture Variant', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-3.png' }
+          { title: 'Texture Variant', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-3.png' },
+          { title: 'Gradient Layer', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-4.png' },
+          { title: 'Stadium Wave', src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-5.png' }
         ]
       },
       {
@@ -77,16 +83,21 @@ export const clients: Client[] = [
           { title: 'Flyer Stack', src: '/Besportify/Printables mockups/Gemini_Generated_Image_cw4czrcw4czrcw4c.png' },
           { title: 'Poster Set', src: '/Besportify/Printables mockups/Gemini_Generated_Image_ocx239ocx239ocx2.png' },
           { title: 'Tickets', src: '/Besportify/Printables mockups/Gemini_Generated_Image_sxkm5wsxkm5wsxkm.png' },
-          { title: 'Event Badges', src: '/Besportify/Printables mockups/Gemini_Generated_Image_triklbtriklbtrik.png' }
+          { title: 'Event Badges', src: '/Besportify/Printables mockups/Gemini_Generated_Image_triklbtriklbtrik.png' },
+          { title: 'Magazine Spread', src: '/Besportify/Printables mockups/Gemini_Generated_Image_yq62axyq62axyq62.png' }
         ]
       },
       {
         title: 'Merch',
         items: [
           { title: 'Jersey Concept', src: '/Besportify/Merch /Gemini_Generated_Image_qo2sqbqo2sqbqo2s.png' },
+          { title: 'Jersey Alt Color', src: '/Besportify/Merch /Gemini_Generated_Image_qo2sqbqo2sqbqo2s-2.png' },
+          { title: 'Jersey Detail', src: '/Besportify/Merch /Gemini_Generated_Image_qo2sqbqo2sqbqo2s-3.png' },
           { title: 'Cap + Scarf', src: '/Besportify/Merch /Gemini_Generated_Image_sc4gsssc4gsssc4g.png' },
           { title: 'Stadium Merch Table', src: '/Besportify/Merch /Gemini_Generated_Image_dysjcjdysjcjdysj.png' },
-          { title: 'Hoodie Lockup', src: '/Besportify/Merch /Gemini_Generated_Image_c6l6suc6l6suc6l6.png' }
+          { title: 'Hoodie Lockup', src: '/Besportify/Merch /Gemini_Generated_Image_c6l6suc6l6suc6l6.png' },
+          { title: 'Jacket Concept', src: '/Besportify/Merch /Gemini_Generated_Image_6e8yrk6e8yrk6e8y.png' },
+          { title: 'Cap Detail', src: '/Besportify/Merch /Gemini_Generated_Image_5pzh845pzh845pzh.png' }
         ]
       }
     ],
