@@ -84,6 +84,7 @@ export const clients: Client[] = [
         description: 'Curving wave referencing stadium crowd energy and chants.'
       }
     ],
+    mockups: [],
     mockupGroups: [
       {
         title: 'UI mockups',
