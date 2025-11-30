@@ -116,30 +116,22 @@ export default function StudioPage({ clients, works }: Props) {
         </section>
 
         <section className="mt-16 space-y-4">
-          <p className="text-sm uppercase tracking-[0.5em] text-black/50">Selected work</p>
-          <div className="flex gap-6 overflow-x-auto pb-4">
+          <p className="text-sm uppercase tracking-[0.5em] text-black/50">UI-UX projects</p>
+          <div className="space-y-3">
             {works.map((work) => (
-              <motion.div
+              <Link
                 key={work.id}
-                whileHover={{ scale: 1.05, rotateX: -6, rotateY: 6 }}
-                className="relative h-56 min-w-[280px] overflow-hidden rounded-3xl bg-black/60 text-white"
-                style={{ transformStyle: 'preserve-3d' }}
+                href={work.link}
+                className="group flex items-center justify-between rounded-xl border border-black/10 bg-white/70 px-4 py-3 text-black transition hover:-translate-y-0.5 hover:border-black/30 hover:shadow-md"
               >
-                <Link href={work.link} className="absolute inset-0 block">
-                  <div className="relative h-full w-full">
-                    {work.image ? (
-                      <Image src={work.image} alt={work.title} fill className="object-cover" sizes="300px" />
-                    ) : (
-                      <div className="flex h-full w-full items-center justify-center bg-black/20 text-xs uppercase tracking-[0.3em] text-white/60">
-                        Upload image in data/studioWorks.ts
-                      </div>
-                    )}
-                  </div>
-                  <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/80 to-transparent p-4">
-                    <p className="text-lg font-display">{work.title}</p>
-                  </div>
-                </Link>
-              </motion.div>
+                <div className="flex items-center gap-3">
+                  <span className="h-2 w-2 rounded-full bg-black/60 group-hover:bg-black" />
+                  <p className="text-lg font-display">{work.title}</p>
+                </div>
+                {work.video && (
+                  <span className="text-xs uppercase tracking-[0.2em] text-black/60 group-hover:text-black"></span>
+                )}
+              </Link>
             ))}
           </div>
         </section>

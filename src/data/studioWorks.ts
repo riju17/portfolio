@@ -3,26 +3,30 @@ export type StudioWork = {
   title: string;
   image: string;
   link: string;
+  video?: string;
 };
 
 export const studioWorks: StudioWork[] = [
   {
     id: 'w1',
-    title: 'Portal Posters',
+    title: 'Sports Highlights',
     image: '',
-    link: '/studio/aurora-hotel'
+    link: '/studio/sports-highlights',
+    video: '/Sports.mov'
   },
   {
     id: 'w2',
-    title: 'UI Bloom Pack',
+    title: 'Academy Management',
     image: '',
-    link: '/studio/solar-supr'
+    link: '/studio/academy-management',
+    video: '/Academymanagement.mov'
   },
   {
     id: 'w3',
-    title: 'Riso Editions',
+    title: 'Book App',
     image: '',
-    link: '/studio/mango-press'
+    link: '/studio/book-app',
+    video: '/bookapp.mov'
   }
 ];
 
