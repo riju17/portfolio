@@ -23,16 +23,16 @@ export default function BookAppPage() {
         </div>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">About the project</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Log books, capture quotes, and visualize reading trends without spreadsheet vibes. Designed around tactile cards, soft gradients, and
               micro-interactions.
             </p>
           </div>
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">Motivation</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Most trackers feel utilitarian. This one leans cozy and expressive to keep readers motivated and proud of their shelf.
             </p>
           </div>
@@ -40,12 +40,14 @@ export default function BookAppPage() {
 
         <section className="mt-12">
           <h3 className="text-2xl font-display">Wireframe & structure</h3>
-          <div className="mt-4 grid gap-4 md:grid-cols-3 text-white/60 text-sm">
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">Home: current read, mood shelf, streak.</div>
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">
+          <div className="mt-4 grid gap-4 md:grid-cols-3 text-sm text-black">
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
+              Home: current read, mood shelf, streak.
+            </div>
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
               Book detail: progress, highlights, notes, quote capture.
             </div>
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
               Stats: genre mix, pages/day, habits, export/share.
             </div>
           </div>
@@ -64,8 +66,8 @@ export default function BookAppPage() {
               <MobileVideoPlayer src="/bookapp.mov" />
               <div className="device-mobile-base" />
             </div>
-            <div className="studio-coral-card rounded-2xl p-5 shadow-lg text-sm leading-relaxed text-white/80">
-              <h4 className="text-xl font-display text-white">Playback notes</h4>
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-5 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70 text-sm leading-relaxed">
+              <h4 className="text-xl font-display text-black">Playback notes</h4>
               <p className="mt-2">
                 Hover to play the mobile demo. The clip restarts on exit to make repeat viewing easy without UI chrome.
               </p>
@@ -78,18 +80,18 @@ export default function BookAppPage() {
         </section>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">What to add</h3>
-            <ul className="mt-3 space-y-2 text-white/70 text-sm leading-relaxed">
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-black/70">
               <li>• High-fidelity screens: onboarding, shelf, book detail, stats.</li>
               <li>• Design tokens: typography, colors, cards, buttons, inputs.</li>
               <li>• Metrics: streak retention, books logged/month, quote saves.</li>
               <li>• Tech: stack (Next.js/Supabase), offline plan, sync approach.</li>
             </ul>
           </div>
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">Next steps</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Add your long-scroll mockup between sections if desired. Need hover-to-scroll storyboard? Export a tall JPG and we’ll embed it.
             </p>
             <Link href="/contact" className="mt-4 inline-flex text-sm uppercase tracking-[0.3em] text-street-accent">

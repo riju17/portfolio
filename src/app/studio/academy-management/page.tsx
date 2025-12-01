@@ -23,16 +23,16 @@ export default function AcademyManagementPage() {
         </div>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">About the project</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Built to replace spreadsheets and WhatsApp threads. Coaches get easy attendance + drills, parents get clear fees and updates, and admins
               see revenue + roster health at a glance.
             </p>
           </div>
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">Motivation</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Small academies need pro-grade tooling without bloat. We focused on clarity, mobile-first data entry, and branded PDFs for trust.
             </p>
           </div>
@@ -40,12 +40,14 @@ export default function AcademyManagementPage() {
 
         <section className="mt-12">
           <h3 className="text-2xl font-display">Wireframe & structure</h3>
-          <div className="mt-4 grid gap-4 md:grid-cols-3 text-white/60 text-sm">
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">Dashboard: fees, attendance, next matches.</div>
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">
+          <div className="mt-4 grid gap-4 md:grid-cols-3 text-sm text-black">
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
+              Dashboard: fees, attendance, next matches.
+            </div>
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
               Sessions: drills, squads, coach notes, quick attendance.
             </div>
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
               Reports: PDFs for parents, exports for admin, shareable links.
             </div>
           </div>
@@ -64,8 +66,8 @@ export default function AcademyManagementPage() {
               <MobileVideoPlayer src="/Academymanagement.mov" />
               <div className="device-mobile-base" />
             </div>
-            <div className="studio-coral-card rounded-2xl p-5 shadow-lg text-sm leading-relaxed text-white/80">
-              <h4 className="text-xl font-display text-white">Playback notes</h4>
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-5 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70 text-sm leading-relaxed">
+              <h4 className="text-xl font-display text-black">Playback notes</h4>
               <p className="mt-2">
                 Hover to play the mobile demo. The video resets when you leave the frame so viewers can replay from the start without controls.
               </p>
@@ -78,18 +80,18 @@ export default function AcademyManagementPage() {
         </section>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">What to add</h3>
-            <ul className="mt-3 space-y-2 text-white/70 text-sm leading-relaxed">
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-black/70">
               <li>• Key flows: onboarding, fee reminders, attendance, report export.</li>
               <li>• System cards: design tokens, buttons, tables, badges.</li>
               <li>• Metrics: overdue fees cut %, report open rate, adoption by coaches.</li>
               <li>• Tech: Next.js, auth, database, PDF generation approach.</li>
             </ul>
           </div>
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">Next steps</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Add actual wireframes or long-scroll UI exports. Want a scroll-on-hover storyboard? Export a tall JPG from Figma and we’ll slot it
               between sections.
             </p>
