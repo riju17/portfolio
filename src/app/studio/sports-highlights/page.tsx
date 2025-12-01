@@ -26,16 +26,16 @@ export default function SportsHighlightsPage() {
         </div>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">About the project</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Cut from raw match footage and crowd B-roll into a high-energy recap. The goal: help the club hype upcoming fixtures and excite fans
               on socials and in-stadium screens.
             </p>
           </div>
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">Motivation</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Elevate grassroots sports footage into a premium-feel trailer using rhythm, typography, and color grading—without heavy VFX budgets.
             </p>
           </div>
@@ -43,12 +43,14 @@ export default function SportsHighlightsPage() {
 
         <section className="mt-12">
           <h3 className="text-2xl font-display">Wireframe & structure</h3>
-          <div className="mt-4 grid gap-4 md:grid-cols-3 text-white/60 text-sm">
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">Hook: cold open, bass hit, scoreboard pop.</div>
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">
+          <div className="mt-4 grid gap-4 md:grid-cols-3 text-sm text-black">
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
+              Hook: cold open, bass hit, scoreboard pop.
+            </div>
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
               Mid: combo of close-ups + crowd, overlay stats, beat-matched cuts.
             </div>
-            <div className="rounded-2xl border border-dashed border-white/20 bg-white/10 p-4">
+            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-4 shadow-[0_14px_30px_rgba(240,80,120,0.16)] ring-1 ring-rose-200/70">
               Outro: logo sting, CTA to next match, slow fade with chant audio.
             </div>
           </div>
@@ -70,18 +72,18 @@ export default function SportsHighlightsPage() {
         </section>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">What to add</h3>
-            <ul className="mt-3 space-y-2 text-white/70 text-sm leading-relaxed">
+            <ul className="mt-3 space-y-2 text-sm leading-relaxed text-black/70">
               <li>• Key specs: length, frame rate, color grade, tools (e.g., Premiere, After Effects).</li>
               <li>• Before/after frames to show grading and typography polish.</li>
               <li>• Metrics: watch time, social engagement, ticket uplift.</li>
               <li>• CTA buttons: download press kit, share link, or view storyboard.</li>
             </ul>
           </div>
-          <div className="studio-coral-card rounded-2xl p-6 shadow-lg">
+          <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70">
             <h3 className="text-2xl font-display">Next steps</h3>
-            <p className="mt-2 text-white/70 leading-relaxed">
+            <p className="mt-2 text-black/70 leading-relaxed">
               Swap placeholder copy with your narrative, drop in wireframe images, and add any long-form scroll assets. Need a scroll-on-hover
               storyboard? Export a tall JPG from Figma and we can slot it between sections.
             </p>

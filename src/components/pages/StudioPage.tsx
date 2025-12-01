@@ -19,26 +19,14 @@ const rosterLogos = [
   { name: 'Kala Katha', logo: '/Kala Katha.jpeg' },
   { name: 'Noida Kings', logo: '/NOIDA KINGS_FINAL.png' },
   { name: 'Gwalior Cheetahs', logo: '/Gwalior cheetah.PNG' },
-  { name: 'MPt20', logo: '/MPt20.webp' },
+  { name: 'MPt20', logo: '/MPt20.png' },
   { name: 'Sportify 2165', logo: '/Besportify.jpg' },
   { name: "Dev's Cricket Academy", logo: '/Devs.JPEG' },
   { name: 'StatStrike', logo: '/Statstr.JPG' },
   { name: 'Sillynions', logo: '' },
   { name: 'Birdbook Podcast', logo: '/Birdbook.JPG' }
 ];
-const rosterPositions = [
-  { top: '5%', left: '8%' },
-  { top: '12%', left: '32%' },
-  { top: '6%', left: '62%' },
-  { top: '18%', left: '80%' },
-  { top: '40%', left: '12%' },
-  { top: '35%', left: '46%' },
-  { top: '40%', left: '74%' },
-  { top: '64%', left: '18%' },
-  { top: '68%', left: '48%' },
-  { top: '60%', left: '78%' }
-];
-const rosterSizes = [220, 200, 240, 180, 230, 210, 190, 230, 200, 220];
+const rosterBubbleSize = 140;
 
 /**
  * StudioPage renders the boutique creative world with warm tones.
@@ -105,7 +93,7 @@ export default function StudioPage({ clients, works }: Props) {
                 whileHover={{ rotateX: -6, rotateY: 6, scale: 1.01 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.5 }}
-                className="rounded-2xl border border-black/10 bg-white/70 p-6 shadow-lg"
+                className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-6 shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70"
                 style={{ transformStyle: 'preserve-3d' }}
               >
                 <h3 className="text-2xl font-display">{step.title}</h3>
@@ -142,57 +130,42 @@ export default function StudioPage({ clients, works }: Props) {
             <h2 className="text-3xl font-display">Companies we’ve collaborated with</h2>
             <p className="text-black/60">Pulled from your client logos above; swap assets in public/ to update.</p>
           </div>
-          <div className="relative h-[760px] w-full overflow-hidden pb-24" style={{ perspective: '1600px' }}>
-            {rosterLogos.map((item, idx) => {
-              const pos = rosterPositions[idx % rosterPositions.length];
-              const size = rosterSizes[idx % rosterSizes.length];
-              const duration = 12 + (idx % 5);
-              const xOffset = idx % 2 === 0 ? 28 : -28;
-              return (
-                <motion.div
-                  key={item.name}
-                  initial={{ y: 0, x: 0 }}
-                  animate={{
-                    y: [-24, 24],
-                    x: [0, xOffset],
-                    rotateX: idx % 2 === 0 ? [-8, 8] : [6, -6],
-                    rotateY: idx % 2 === 0 ? [12, -12] : [-12, 12],
-                    rotateZ: [-2, 2]
-                  }}
-                  whileHover={{ rotateX: -4, rotateY: 4, scale: 1.02 }}
-                  transition={{
-                    duration,
-                    repeat: Infinity,
-                    repeatType: 'mirror',
-                    ease: 'easeInOut',
-                    delay: idx * 0.4
-                  }}
-                  className="absolute flex items-center justify-center rounded-full border border-white/30 bg-gradient-to-br from-white/90 via-[#f4f1e9]/85 to-white/70 overflow-hidden shadow-[0_30px_80px_rgba(0,0,0,0.2)] ring-2 ring-white/40"
-                  style={{
-                    top: pos.top,
-                    left: pos.left,
-                    width: size,
-                    height: size,
-                    backdropFilter: 'blur(6px)',
-                    transformStyle: 'preserve-3d'
-                  }}
+          <div className="grid gap-y-10 gap-x-6 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            {rosterLogos.map((item, idx) => (
+              <motion.div
+                key={item.name}
+                initial={{ opacity: 0, y: 16, scale: 0.96 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                whileHover={{ scale: 1.03 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: idx * 0.03, ease: 'easeOut' }}
+                className="flex flex-col items-center"
+              >
+                <div
+                  className="relative flex items-center justify-center rounded-full bg-gradient-to-br from-white via-[#f9f5ef] to-white shadow-[0_12px_32px_rgba(0,0,0,0.12)] ring-1 ring-black/5"
+                  style={{ width: rosterBubbleSize, height: rosterBubbleSize }}
                 >
-                  {item.logo ? (
-                    <Image src={item.logo} alt={item.name} width={size} height={size} className="object-contain" />
-                  ) : (
-                    <span className="text-base font-semibold uppercase tracking-[0.3em] text-black/60">
-                      {item.name.split(' ')[0]}
-                    </span>
-                  )}
-                </motion.div>
-              );
-            })}
-            <div className="pointer-events-none absolute inset-0 -z-10 opacity-30">
-              <div className="absolute left-5 top-8 h-32 w-32 rounded-full bg-sky-100/40 blur-3xl" />
-              <div className="absolute right-10 bottom-4 h-48 w-48 rounded-full bg-emerald-100/40 blur-[70px]" />
-              <div className="absolute left-1/3 bottom-10 h-36 w-36 rounded-full bg-amber-100/40 blur-[60px]" />
-              <div className="absolute right-1/3 top-1/3 h-40 w-40 rounded-full bg-pink-100/40 blur-[70px]" />
-            </div>
+                  <div
+                    className="flex items-center justify-center overflow-hidden rounded-full bg-white/90 ring-1 ring-black/5"
+                    style={{ width: rosterBubbleSize - 12, height: rosterBubbleSize - 12 }}
+                  >
+                    {item.logo ? (
+                      <Image
+                        src={item.logo}
+                        alt={item.name}
+                        width={(rosterBubbleSize - 24) * (item.name === 'MPt20' ? 1.2 : 1)}
+                        height={(rosterBubbleSize - 24) * (item.name === 'MPt20' ? 1.2 : 1)}
+                        className="h-full w-full object-contain rounded-full"
+                      />
+                    ) : (
+                      <span className="text-sm font-semibold uppercase tracking-[0.3em] text-black/60">
+                        {item.name.slice(0, 3)}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
           </div>
         </section>
       </div>
