@@ -29,7 +29,7 @@ export default function WorldCard({ title, description, badge, href, theme, dela
       viewport={{ once: true, amount: 0.4 }}
       transition={{ duration: 0.6, delay }}
       whileHover={{ rotateX: 6, rotateY: -6, y: -10 }}
-      className="group cursor-peek rounded-3xl border border-white/10 bg-white/5 p-6 transition"
+      className="group cursor-peek rounded-3xl border border-black/5 bg-white/70 p-6 shadow-[0_18px_80px_rgba(0,0,0,0.06)] backdrop-blur-sm transition"
     >
       <div
         className={`rounded-2xl bg-gradient-to-br ${themeMap[theme].bg} p-6 text-left shadow-glow transition group-hover:shadow-2xl`}

@@ -294,15 +294,15 @@ export const clients: Client[] = [
     slug: 'statstrike',
     name: 'StatStrike',
     shortDescription: 'Sports analytics platform turning live stats into interactive stories.',
-    year: '2022',
+    year: '2025',
     services: ['Branding', 'UI/UX'],
-    tools: ['Figma', 'Cinema4D'],
+    tools: ['Figma', 'Adobe Illustrator', 'Adobe Photoshop', 'Adobe After Effects', 'Canva'],
     heroImage: '/Statstr.JPG',
     palette: [
-      { name: 'Neon Lime', hex: '#B4FF39' },
-      { name: 'Midnight Turf', hex: '#071727' },
-      { name: 'Graphite', hex: '#1F2A37' },
-      { name: 'Frost', hex: '#F1F5F9' }
+      { name: 'Mint Edge', hex: '#9DD9D2' },
+      { name: 'Jet Black', hex: '#0B0B0B' },
+      { name: 'Gold Flame', hex: '#C9A875' },
+      { name: 'Stat Blue', hex: '#4DBFD8' }
     ],
     typography: [
       { label: 'Display', family: 'Clash Display', sample: 'STAT STRIKE' },
@@ -310,18 +310,122 @@ export const clients: Client[] = [
     ],
     logos: [
       { label: 'Primary Mark', src: '/Statstr.JPG' },
-      { label: 'Glyphs', src: '/Statstr.JPG' },
-      { label: 'Jersey Tag', src: '/Statstr.JPG' }
+      { label: 'Badges & Icons', src: '/Statstrike/logos/l2.png' },
+      { label: 'Pattern System', src: '/Statstrike/patterns/p1.png' }
     ],
-    mockups: [
-      { title: 'Mobile UI', src: '' },
-      { title: 'Scoreboard stickers', src: '' },
-      { title: 'Event signage', src: '' }
+    iconBadgeAlbum: [
+      {
+        src: '/Statstrike/logos/l1.png',
+        label: 'Icon 01 · Core Crest',
+        description: 'StatStrike monogram with mint capsule glow for hero placements.'
+      },
+      {
+        src: '/Statstrike/logos/l2.png',
+        label: 'Icon 02 · Wordmark',
+        description: 'Extended logotype used on broadcast panels and jerseys.'
+      },
+      {
+        src: '/Statstrike/logos/l3.png',
+        label: 'Icon 03 · Badge',
+        description: 'Condensed badge for avatars, watermarks, and stickers.'
+      },
+      {
+        src: '/Statstrike/logos/l4.png',
+        label: 'Icon 04 · Jersey Patch',
+        description: 'Square badge paired with kit sleeves and digital tickets.'
+      },
+      {
+        src: '/Statstrike/logos/l5.png',
+        label: 'Icon 05 · Neon Glyph',
+        description: 'Glow-backed glyph for scoreboard transitions and stings.'
+      },
+      {
+        src: '/Statstrike/logos/l6.png',
+        label: 'Icon 06 · Gradient Seal',
+        description: 'Circular seal locking up the colors for event merch.'
+      }
+    ],
+    patternSystemAlbum: [
+      {
+        src: '/Statstrike/patterns/p1.png',
+        label: 'Pattern 01 · Pulse Grid',
+        description: 'Primary grid referencing radar sweeps for dashboard panels.'
+      },
+      {
+        src: '/Statstrike/patterns/p2.png',
+        label: 'Pattern 02 · Match Waves',
+        description: 'Signal waves layered over hero art for live match interstitials.'
+      },
+      {
+        src: '/Statstrike/patterns/p3.png',
+        label: 'Pattern 03 · Stat Blocks',
+        description: 'Stacked block pattern framing comparison stats and charts.'
+      },
+      {
+        src: '/Statstrike/patterns/p4.png',
+        label: 'Pattern 04 · Vector Mesh',
+        description: 'Wireframe mesh bridging AR scenes with UI cards.'
+      },
+      {
+        src: '/Statstrike/patterns/p5.png',
+        label: 'Pattern 05 · Kinetic Rings',
+        description: 'Circular motion blur for highlight wipes and hero spreads.'
+      },
+      {
+        src: '/Statstrike/patterns/p6.png',
+        label: 'Pattern 06 · Infra Lines',
+        description: 'Infrared line field backing charts and sponsorship wipes.'
+      }
+    ],
+    mockups: [],
+    mockupGroups: [
+      {
+        title: 'Digital System',
+        items: [
+          { title: 'App Logo', src: '/Statstrike/digital elements/app logo.png' },
+          { title: 'Loading Logo', src: '/Statstrike/digital elements/loading logo.png' },
+          { title: 'Dashboard Header', src: '/Statstrike/digital elements/dashboard header.png' },
+          { title: 'Hero Banner', src: '/Statstrike/digital elements/banner.png' },
+          { title: 'Wallpaper Pack', src: '/Statstrike/digital elements/wallpaper.png' }
+        ]
+      },
+      {
+        title: 'Printables & Reports',
+        items: [
+          { title: 'Performance UI', src: '/Statstrike/Printables/performance UI.png' },
+          { title: 'Invoice Layout', src: '/Statstrike/Printables/invoice UI.png' },
+          { title: 'Analysis Sheet', src: '/Statstrike/Printables/analysis sheet.png' },
+          { title: 'Letterhead', src: '/Statstrike/Printables/Letterhead.png' },
+          { title: 'Visiting Card', src: '/Statstrike/Printables/visiting card.png' }
+        ]
+      },
+      {
+        title: 'Merch & Desk',
+        items: [
+          { title: 'Badge Patch', src: '/Statstrike/mockups/patch.png' },
+          { title: 'Bat Sticker', src: '/Statstrike/mockups/batsticker.png' },
+          { title: 'Desk Mat', src: '/Statstrike/mockups/desk mat.png' },
+          { title: 'Mousepad', src: '/Statstrike/mockups/mousepad.png' },
+          { title: 'Laptop Sleeve', src: '/Statstrike/mockups/laptop sleeve.png' },
+          { title: 'Clipboard', src: '/Statstrike/mockups/Clipboard.png' },
+          { title: 'Bottle', src: '/Statstrike/mockups/bottle.png' },
+          { title: 'Coffee Mug', src: '/Statstrike/mockups/coffee mug.png' },
+          { title: 'Stat Card', src: '/Statstrike/mockups/statcard.png' }
+        ]
+      },
+      {
+        title: 'Typography Looks',
+        items: [
+          { title: 'Headline Grid', src: '/Statstrike/typography/semihead.png' },
+          { title: 'Type Specimens', src: '/Statstrike/typography/Gemini_Generated_Image_ee7diyee7diyee7d.png' },
+          { title: 'Editorial Spread', src: '/Statstrike/typography/complete mockup.png' }
+        ]
+      }
     ],
     story: {
-      context: 'StatStrike delivers real-time analytics across cricket, football, and tennis broadcasts.',
-      challenge: 'Make complex stats feel cinematic and accessible on mobile dashboards + broadcast overlays.',
-      approach: 'Built neon-lime palette, kinetic typography, and modular card system for quicker storytelling.',
+      context: 'The game of cricket generates massive amounts of performance data, yet most players, academies, and coaches still rely on manual observation and fragmented tools. STATSTRIKE was created to bridge this gap — a modern, minimal, hyper-efficient analytics system designed to make data easy, accessible, and actionable for players across all levels. With a brand language inspired by precision, motion, and impact, STATSTRIKE positions itself as the new standard for sport-tech intelligence.',
+      challenge: 'Cricket analytics platforms often feel cluttered, overly technical, or visually outdated. The challenge was to build a brand that communicates power and accuracy while staying clean, futuristic, and instantly recognizable. STATSTRIKE needed: \n A bold visual identity built around speed, flame-motion, and smart data.\n' +'A system simple enough for beginners but strong enough for competitive coaching. \n Branding assets that work both on the field (jerseys, gear, reports) and on-screen (app, dashboard, UI). \n A look that feels premium yet accessible to every level of cricket.',
+      approach: 'The brand was built starting from the core symbol — a flaming cricket ball — representing momentum, sharpness, and game intelligence. From this, a minimal visual system was developed using: A mint–gold–black palette to reflect sport-tech clarity and premium performance. Analytical brand patterns like stat lines, trajectory arcs, dot matrices, and simplified flame strokes. A modern typography stack combining bold sports headings and mono-space data fonts. Clean layout systems for dashboards, match reports, performance cards, and digital screens. Every asset was designed to reflect the brand’s promise: sharp insights, fast decisions, smart cricket.',
       outcome: 'Improved viewer engagement with quicker highlight packages and social-ready stat snippets.'
     }
   },
@@ -501,10 +605,11 @@ export const clients: Client[] = [
     tools: ['Figma', 'Illustrator', 'Premiere Pro'],
     heroImage: '/Devs.JPEG',
     palette: [
-      { name: 'Pitch Green', hex: '#1C7C54' },
-      { name: 'Sunset Orange', hex: '#FF7A3D' },
-      { name: 'Chalk White', hex: '#F6F6F6' },
-      { name: 'Night Sky', hex: '#0B1A2C' }
+      { name: 'Academy Blue', hex: '#063B73' },
+      { name: 'Red', hex: '#E03028' },
+      { name: 'Chalk White', hex: '#FFFFFF' },
+      { name: 'Sky Grey', hex: '#A9B0B8' },
+      { name: 'Deep NAvy', hex: '#031F44' }
     ],
     typography: [
       { label: 'Display', family: 'Druk Wide', sample: 'DEV\'S CRICKET' },
@@ -512,54 +617,86 @@ export const clients: Client[] = [
     ],
     logos: [
       { label: 'Primary Crest', src: '/Devs.JPEG' },
-      { label: 'Pitch Icon', src: '/Devs.JPEG' },
-      { label: 'Pattern', src: '/Devs.JPEG' }
+      { label: 'Icon & Badge Set', src: '/Devs cricket academy /Icons and badges/icon.png' }
+    ],
+    iconBadgeAlbum: [
+      {
+        src: '/Devs cricket academy /Icons and badges/icon.png',
+        label: 'Icon 01 · Crest',
+        description: 'Primary academy crest with wicket + ball centerpiece.'
+      },
+      {
+        src: '/Devs cricket academy /Icons and badges/ball.png',
+        label: 'Icon 02 · Power Seam',
+        description: 'High-contrast cricket ball icon for overlays and badges.'
+      },
+      {
+        src: '/Devs cricket academy /Icons and badges/stumps.png',
+        label: 'Icon 03 · Guarded Stumps',
+        description: 'Minimal stump illustration for defensive tips and stat cards.'
+      },
+      {
+        src: '/Devs cricket academy /Icons and badges/bowler.png',
+        label: 'Icon 04 · Pace Arc',
+        description: 'Silhouette of a bowler captured mid action for hype graphics.'
+      },
+      {
+        src: '/Devs cricket academy /Icons and badges/bat.png',
+        label: 'Icon 05 · Bat Stroke',
+        description: 'Flat illustration of the academy bat graphic for merch labels.'
+      },
+      {
+        src: '/Devs cricket academy /Icons and badges/batsmen.png',
+        label: 'Icon 06 · Batter Pose',
+        description: 'Hero batter pose used on scorecards and recruitment decks.'
+      }
     ],
     mockups: [
-      { title: 'Training app UI', src: '' },
-      { title: 'Jersey kit', src: '' },
-      { title: 'Social drills series', src: '' }
+      { title: 'Scorecard UI', src: '/Devs cricket academy /socials and forms/Scorecard.png' },
+      { title: 'Drills Poster Stack', src: '/Devs cricket academy /socials and forms/socials and posters.png' },
+      { title: 'Certificate Template', src: '/Devs cricket academy /printables/certificate.png' }
+    ],
+    mockupGroups: [
+      {
+        title: 'Apparel Drop',
+        items: [
+          { title: 'Home Jersey', src: '/Devs cricket academy /apparelle/t1.png' },
+          { title: 'Away Jersey', src: '/Devs cricket academy /apparelle/t2.png' },
+          { title: 'Training Jersey', src: '/Devs cricket academy /apparelle/t3.png' },
+          { title: 'Coach Tee', src: '/Devs cricket academy /apparelle/t4.png' },
+          { title: 'Retro Tee', src: '/Devs cricket academy /apparelle/t5.png' },
+          { title: 'Youth Tee', src: '/Devs cricket academy /apparelle/t6.png' },
+          { title: 'Academy Tee', src: '/Devs cricket academy /apparelle/t7.png' },
+          { title: 'Full Kit · White', src: '/Devs cricket academy /apparelle/complete mockup white.png' },
+          { title: 'Full Kit · Blue', src: '/Devs cricket academy /apparelle/complete mockup blue.png' },
+          { title: 'Cap Line', src: '/Devs cricket academy /apparelle/cap.png' },
+          { title: 'Sticker Sheet', src: '/Devs cricket academy /apparelle/stickers.png' }
+        ]
+      },
+      {
+        title: 'Socials & Forms',
+        items: [
+          { title: 'Banner', src: '/Devs cricket academy /socials and forms/banner.png' },
+          { title: 'Registration Form', src: '/Devs cricket academy /socials and forms/Registration form.png' },
+          { title: 'Report Sheet', src: '/Devs cricket academy /socials and forms/Report sheet.png' },
+          { title: 'Post Template', src: '/Devs cricket academy /socials and forms/post temp.png' },
+          { title: 'YouTube Thumbnail', src: '/Devs cricket academy /socials and forms/thumbnail.png' }
+        ]
+      },
+      {
+        title: 'Printables Kit',
+        items: [
+          { title: 'Visiting Card', src: '/Devs cricket academy /printables/visiting card.png' },
+          { title: 'Letterhead', src: '/Devs cricket academy /printables/letter head.png' },
+          { title: 'ID Card', src: '/Devs cricket academy /printables/id card.png' }
+        ]
+      }
     ],
     story: {
-      context: 'Dev’s Academy needed a modern identity to excite young players & parents alike.',
-      challenge: 'Balance pro-level credibility with sneakers-and-smiles energy on social media.',
-      approach: 'Built a bold athletic palette, stat overlays, and motion templates for game-day updates.',
-      outcome: 'Programs feel premium yet approachable, sparking more sign-ups and sponsorship interest.'
-    }
-  },
-  {
-    slug: 'sillynions',
-    name: 'Sillynions',
-    shortDescription: 'Whimsical illustration studio turning quirky characters into merch & content.',
-    year: '2019–Present',
-    services: ['Branding', 'Illustration', 'Packaging'],
-    tools: ['Procreate', 'Figma', 'Blender'],
-    heroImage: '',
-    palette: [
-      { name: 'Marshmallow', hex: '#F9EAE1' },
-      { name: 'Berry Pop', hex: '#FF4FA1' },
-      { name: 'Mint Soda', hex: '#5DE0C1' },
-      { name: 'Ink Outline', hex: '#2D1E2F' }
-    ],
-    typography: [
-      { label: 'Display', family: 'Cabin Sketch', sample: 'SILLYNIONS' },
-      { label: 'Body', family: 'Space Grotesk', sample: 'Product drop notes & comic captions.' }
-    ],
-    logos: [
-      { label: 'Wordmark', src: '' },
-      { label: 'Character badge', src: '' },
-      { label: 'Pattern assets', src: '' }
-    ],
-    mockups: [
-      { title: 'Sticker pack', src: '' },
-      { title: 'Apparel mockups', src: '' },
-      { title: 'Social comic panels', src: '' }
-    ],
-    story: {
-      context: 'Sillynions spreads joy through character-led storytelling and merch drops.',
-      challenge: 'Create an identity toolkit that’s flexible for new characters, collabs, and product lines.',
-      approach: 'Developed playful typography, candy gradients, and modular grid for comics & reels.',
-      outcome: 'Stronger brand recall and faster launch cycles for new characters + community campaigns.'
+      context: 'Dev’s Cricket Academy was founded with a simple goal: to give young players a space where technique, discipline, and modern cricketing intelligence come together. While many academies focus only on physical training, the vision here was to build a learning ecosystem — one that blends traditional coaching with structured analysis, progress tracking, and individualized development. The academy needed a brand identity that communicates trust, growth, and modern cricket excellence.',
+      challenge: 'In a world where cricket academies look visually similar, the challenge was to create a brand presence that feels distinct, polished, and purpose-driven. Dev’s Cricket Academy required:A visual identity that reflects professionalism, youth development, and disciplined training.A system that works across field gear, report cards, posters, certificates, and digital platforms . Branding that communicates mentorship, growth, and skill-building—not just cricket practice. A style that feels premium but still warm, approachable, and inspiring for young players and parents.',
+      approach: 'The identity was built around strong foundational elements — structured layout grids, confident typography, and sharp cricket-inspired visuals. The branding combines: A professional yet energetic color palette representing ambition and performance.Clean iconography and line-based motifs inspired by cricket strokes, seam patterns, and field setups. Simple, clear communication for training schedules, analytics sheets, and skill-progress tracking. A mix of bold display fonts for inspiration and clean sans-serifs for clarity and instruction. The brand direction mirrors the academy’s pedagogy: disciplined, modern, supportive, and high-impact.',
+      outcome: 'Dev’s Cricket Academy now has a cohesive, inspiring brand identity that reflects its core mission — shaping confident, technically strong players. The final system includes field-friendly branding (jersey patches, bat stickers, training sheets), parent-friendly documents (performance reports, certificates), and digital assets (social banners, session updates). The identity elevates the academy’s presence, strengthens trust, and visually communicates its commitment to nurturing the next generation of cricketers.'
     }
   }
 ];
