@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 import AnimatedButton from '@/components/AnimatedButton';
 import WorldCard from '@/components/WorldCard';
 
@@ -49,13 +50,23 @@ export default function HomePage() {
       <div className="pointer-events-none absolute right-[-60px] bottom-10 h-80 w-80 rounded-full bg-teal-200/50 blur-3xl" />
       <div className="pointer-events-none absolute left-1/3 top-1/3 h-28 w-28 rounded-full border border-black/5" />
       <div className="relative mx-auto max-w-6xl px-4 py-16 md:px-6">
-        <section className="grid gap-12 md:grid-cols-2">
-          <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
+        <section className="grid gap-8 md:grid-cols-[1.6fr_1fr] md:items-start">
+          <motion.div
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.7 }}
+            className="rounded-3xl border border-black/5 bg-white/70 p-8 shadow-[0_20px_80px_rgba(0,0,0,0.08)] backdrop-blur"
+          >
             <p className="text-sm uppercase tracking-[0.5em] text-black/60">Portal</p>
             <h1 className="mt-4 text-5xl font-display leading-tight md:text-6xl">Hey, I’m Riju.</h1>
             <p className="mt-4 text-lg text-black/70">
-              Creative director, engineer, and photographer weaving branded worlds, sci-fi laboratories, and cinematic
-              street frames.
+              I design with logic, empathy, and a deep respect for detail. I’m Riju—a Computer Science student, UI/UX
+              designer, and builder who loves creating systems that feel right as much as they work right.
+            </p>
+            <p className="mt-3 text-lg text-black/70">
+              My work spans product interfaces, analytics dashboards, accessibility-focused ML solutions, and brand-driven
+              digital experiences. Whether I’m designing an interface, analyzing performance data, or structuring an
+              application backend, my goal stays the same: make things simpler, smarter, and more human.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <AnimatedButton
@@ -83,41 +94,24 @@ export default function HomePage() {
               Or wander the Street →
             </Link>
           </motion.div>
+
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.7 }}
-            className="relative h-[420px] overflow-hidden rounded-[36px] border border-black/5 bg-white/70 p-10 shadow-[0_30px_120px_rgba(0,0,0,0.08)] backdrop-blur-xl"
+            className="relative h-80 overflow-hidden rounded-3xl border border-black/5 bg-white/70 shadow-[0_20px_80px_rgba(0,0,0,0.08)] backdrop-blur md:h-96"
           >
-            <div className={`absolute inset-0 bg-gradient-to-br ${heroBg[activeWorld]} opacity-70`} />
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.15)_0%,_transparent_60%)]" />
-            <div className="relative flex h-full flex-col justify-between">
-              <div className="space-y-3">
-                <div
-                  className={`inline-flex items-center gap-2 rounded-full border border-black/5 bg-gradient-to-r ${heroBg[activeWorld]} px-4 py-2 text-xs uppercase tracking-[0.4em] text-black/70`}
-                >
-                  <span className="h-2 w-2 rounded-full bg-emerald-400 shadow-[0_0_12px_rgba(52,211,153,0.6)]" />
-                  Multiverse
-                </div>
-                <h2 className="text-4xl font-display text-black">Three worlds, one energy.</h2>
-                <p className="text-black/70">
-                  Each portal is interconnected through typography, narration, and motion cues so the journey feels intentional.
-                </p>
-              </div>
-              <div className="grid grid-cols-3 gap-4 text-center text-xs uppercase tracking-[0.3em] text-black/60">
-                <div>
-                  <p>Studio</p>
-                  <p className="text-black">Craft</p>
-                </div>
-                <div>
-                  <p>Lab</p>
-                  <p className="text-black">Code</p>
-                </div>
-                <div>
-                  <p>Street</p>
-                  <p className="text-black">Camera</p>
-                </div>
-              </div>
+            <div className={`absolute inset-0 bg-gradient-to-br ${heroBg[activeWorld]} opacity-60`} />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.18)_0%,_transparent_60%)]" />
+            <div className="relative h-full">
+              <Image
+                src="/Riju/Rijumain.JPG"
+                alt="Portrait of Riju"
+                fill
+                sizes="(min-width: 768px) 384px, 320px"
+                className="object-cover"
+                priority
+              />
             </div>
           </motion.div>
         </section>
@@ -125,7 +119,9 @@ export default function HomePage() {
         <section className="mt-20 space-y-10">
           <div>
             <p className="text-sm uppercase tracking-[0.6em] text-black/50">Worlds</p>
-            <h2 className="section-heading">Pick a reality to explore.</h2>
+            <p className="mt-2 text-base text-black/70">
+              Three worlds, one energy. Pick a reality to explore.
+            </p>
           </div>
           <div className="grid gap-8 md:grid-cols-3">
             {cards.map((card, index) => (

@@ -60,7 +60,7 @@ export default function StreetPage({ photos }: Props) {
         )}
         <div className="absolute inset-0 bg-gradient-to-b from-black/70 to-street-base" />
         <div className="relative z-10 mx-auto flex h-full max-w-5xl flex-col justify-end px-4 pb-12 md:px-6">
-          <p className="text-sm uppercase tracking-[0.6em] text-street-accent">World IV</p>
+          <p className="text-sm uppercase tracking-[0.6em] text-street-accent">World III</p>
           <h1 className="text-5xl font-display">Street</h1>
           <p className="mt-4 text-lg text-white/80 max-w-3xl">
             Cinematic wanderings capturing people, places, and stolen seconds across neon cities and humid coastlines.

@@ -12,9 +12,18 @@ type WorldCardProps = {
   delay?: number;
 };
 
-const themeMap: Record<WorldCardProps['theme'], { bg: string; text: string }> = {
+const themeMap: Record<
+  WorldCardProps['theme'],
+  { bg: string; text: string; badge?: string; body?: string; link?: string }
+> = {
   studio: { bg: 'from-studio-light to-studio-dark', text: 'text-studio-dark' },
-  lab: { bg: 'from-lab-base to-lab-magenta', text: 'text-lab-neon' },
+  lab: {
+    bg: 'from-[#f5f7fa] via-[#d7dbe4] to-[#adb4c4]',
+    text: 'text-[#0b1424]',
+    badge: 'text-[#2563eb]',
+    body: 'text-[#1f2a3d]',
+    link: 'text-[#0b1424]'
+  },
   street: { bg: 'from-street-base to-street-muted', text: 'text-street-accent' }
 };
 
@@ -34,10 +43,21 @@ export default function WorldCard({ title, description, badge, href, theme, dela
       <div
         className={`rounded-2xl bg-gradient-to-br ${themeMap[theme].bg} p-6 text-left shadow-glow transition group-hover:shadow-2xl`}
       >
-        <p className="text-xs uppercase tracking-[0.4em] text-white/60">{badge}</p>
+        <p
+          className={`text-xs uppercase tracking-[0.4em] ${
+            themeMap[theme].badge ?? 'text-white/60'
+          }`}
+        >
+          {badge}
+        </p>
         <h3 className={`mt-4 text-3xl font-display ${themeMap[theme].text}`}>{title}</h3>
-        <p className="mt-2 text-white/80">{description}</p>
-        <Link href={href} className="mt-6 inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] text-white">
+        <p className={`mt-2 ${themeMap[theme].body ?? 'text-white/80'}`}>{description}</p>
+        <Link
+          href={href}
+          className={`mt-6 inline-flex items-center gap-2 text-sm uppercase tracking-[0.3em] ${
+            themeMap[theme].link ?? 'text-white'
+          }`}
+        >
           View world →
         </Link>
       </div>

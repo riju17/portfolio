@@ -35,7 +35,7 @@ export default function LabPage({ projects }: Props) {
     >
       <div className="mx-auto max-w-6xl px-4 py-16 md:px-6 space-y-12">
         <section className="neon-frame rounded-3xl bg-gradient-to-br from-[#f5f7fa] via-[#d7dbe4] to-[#adb4c4] p-10 text-[#0b1424] shadow-[0_0_60px_rgba(19,25,40,0.35)]">
-          <p className="text-sm uppercase tracking-[0.6em] text-[#2563eb]">World III</p>
+          <p className="text-sm uppercase tracking-[0.6em] text-[#2563eb]">World II</p>
           <h1 className="mt-4 text-5xl font-display text-[#1b2436]">The Lab</h1>
           <p className="mt-4 text-lg text-[#4f5b76] max-w-2xl">
             Technical experiments disguised as arcade missions. Edge compute, creative tooling, AI adventures, all with a hint of neon drama.
