@@ -10,9 +10,8 @@ export const studioWorks: StudioWork[] = [
   {
     id: 'w1',
     title: 'Sports Highlights',
-    image: '',
-    link: '/studio/sports-highlights',
-    video: '/Sports.mov'
+    image: '/UIUX/Sportify/Sportify%20main.jpg',
+    link: '/studio/sports-highlights'
   },
   {
     id: 'w2',

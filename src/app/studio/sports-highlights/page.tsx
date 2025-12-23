@@ -1,5 +1,6 @@
 import Link from 'next/link';
-import SportsVideoPlayer from '@/components/SportsVideoPlayer';
+import Image from 'next/image';
+import ZoomableBoard from './ZoomableBoard';
 
 export const metadata = {
   title: 'Sports Highlights — Case Study'
@@ -60,15 +61,25 @@ export default function SportsHighlightsPage() {
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
               <p className="text-sm uppercase tracking-[0.4em] text-white/60">Watch</p>
-              <h3 className="text-2xl font-display">MacBook preview (hover to play)</h3>
+              <h3 className="text-2xl font-display">Sample design</h3>
             </div>
-            <p className="text-xs uppercase tracking-[0.3em] text-white/50">Video stays paused until hover</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-white/50">Scroll to explore the layout</p>
           </div>
-          <div className="device-macbook">
-            <SportsVideoPlayer src="/Sports.mov" />
-            <div className="device-macbook-base" />
+          <div className="rounded-2xl border border-white/20 bg-white/10 p-3 shadow-[0_18px_40px_rgba(240,80,120,0.18)] backdrop-blur">
+            <div className="relative mx-auto max-w-4xl h-[70vh] max-h-[820px] overflow-hidden rounded-xl border border-white/10 bg-black/10">
+              <div className="h-full overflow-y-auto">
+                <Image
+                  src="/UIUX/Sportify/Sportify%20main.jpg"
+                  alt="Sportify storyboard scroll"
+                  width={1600}
+                  height={3200}
+                  className="h-auto w-full rounded-lg shadow-lg"
+                  priority
+                />
+              </div>
+            </div>
           </div>
-          <p className="text-xs text-white/60">Tip: Replace /Sports.mov in public/ if you have a longer or updated cut.</p>
+          <p className="text-xs text-white/60">Tip: Swap /UIUX/Sportify/Sportify%20main.jpg in public/ with any updated scroll.</p>
         </section>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">
@@ -91,6 +102,21 @@ export default function SportsHighlightsPage() {
               Book a launch edit →
             </Link>
           </div>
+        </section>
+
+        <section className="mt-16 space-y-4">
+          <h3 className="text-2xl font-display text-white">Complete mockup</h3>
+          <p className="text-white/70 text-sm">Pinned board view — scroll inside the frame to review the full mockup.</p>
+          <ZoomableBoard
+            images={[
+              {
+                src: '/UIUX/Sportify/Section 1.png',
+                alt: 'Sport management mockup section 1',
+                width: 1600,
+                height: 2000
+              }
+            ]}
+          />
         </section>
       </div>
     </div>

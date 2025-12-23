@@ -28,9 +28,6 @@ export default function ProjectDetailLayout({ project, children }: Props) {
             {project.genre}
           </span>
           <span className="rounded-full border border-white/20 px-3 py-1 uppercase tracking-widest">
-            Difficulty: {project.difficulty}
-          </span>
-          <span className="rounded-full border border-white/20 px-3 py-1 uppercase tracking-widest">
             {project.status}
           </span>
         </div>

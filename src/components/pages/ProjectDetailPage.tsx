@@ -4,6 +4,11 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 import type { Project } from '@/data/projects';
 import ProjectDetailLayout from '@/components/ProjectDetailLayout';
+import ArchitectureMermaid from '@/app/components/ArchitectureMermaid';
+import BooktrakerArchitecture from '@/app/components/BooktrakerArchitecture';
+import WingedWonderArchitecture from '@/app/components/WingedWonderArchitecture';
+import IslArchitecture from '@/app/components/IslArchitecture';
+import ElderlyCareArchitecture from '@/app/components/ElderlyCareArchitecture';
 
 type Props = {
   project: Project;
@@ -52,14 +57,51 @@ export default function ProjectDetailPage({ project }: Props) {
           </section>
           <section className="neon-frame rounded-2xl bg-white/5 p-6">
             <h3 className="text-xl font-display text-lab-neon">Architecture diagram</h3>
-            <div className="mt-6 flex flex-wrap items-center gap-4 text-sm uppercase tracking-[0.3em] text-white/70">
-              {['Sensors', 'Edge Gateway', 'Mission Core', 'UI'].map((node, index) => (
-                <div key={node} className="flex items-center gap-4">
-                  <div className="rounded-2xl border border-lab-neon/40 px-4 py-2 text-white">{node}</div>
-                  {index < 3 && <span className="text-lab-neon text-2xl">→</span>}
-                </div>
-              ))}
-            </div>
+            {project.slug === 'the-food-crew' ? (
+              <div className="mt-6">
+                <ArchitectureMermaid />
+              </div>
+            ) : project.slug === 'booktraker' ? (
+              <div className="mt-6">
+                <BooktrakerArchitecture />
+              </div>
+            ) : project.slug === 'postcards' ? (
+              <div className="mt-6">
+                <WingedWonderArchitecture />
+              </div>
+            ) : project.slug === 'indian-sign-language-mlpfnn' ? (
+              <div className="mt-6">
+                <IslArchitecture />
+              </div>
+            ) : project.slug === 'elderly-care-app' ? (
+              <div className="mt-6">
+                <ElderlyCareArchitecture />
+              </div>
+            ) : (
+              <div className="mt-4 space-y-4">
+                {(project.architectureDiagram ?? [['Sensors', 'Edge Gateway', 'Mission Core', 'UI']]).map((row, rowIndex) => (
+                  <div
+                    key={rowIndex}
+                    className="flex flex-wrap items-center gap-3 overflow-x-auto rounded-2xl border border-white/10 bg-white/5 p-3 text-sm uppercase tracking-[0.25em] text-white/80"
+                  >
+                    {row.map((node, index) => (
+                      <div key={`${rowIndex}-${node}-${index}`} className="flex items-center gap-3">
+                        <div className="rounded-xl border border-white/25 bg-white/10 px-4 py-2 text-white shadow-[0_0_18px_rgba(0,0,0,0.25)]">
+                          {node}
+                        </div>
+                        {index < row.length - 1 && (
+                          <div className="flex items-center gap-2 text-white/60">
+                            <div className="h-px w-10 bg-white/30" />
+                            <span className="text-base">➝</span>
+                            <div className="h-px w-10 bg-white/30" />
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                ))}
+              </div>
+            )}
           </section>
           <section className="grid gap-6 md:grid-cols-2">
             {gallery.length > 0 ? (

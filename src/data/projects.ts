@@ -9,7 +9,6 @@ export type Project = {
   genre: string;
   techStack: string[];
   status: 'Online' | 'In Progress' | 'Archived';
-  difficulty: 'Easy' | 'Medium' | 'Hard';
   shortDescription: string;
   coverImage: string;
   githubUrl: string;
@@ -17,6 +16,7 @@ export type Project = {
   objective: string;
   approach: string;
   architecture: string;
+  architectureDiagram?: string[][];
   role: string;
   highlights: string[];
   gallery: string[];
@@ -26,23 +26,31 @@ export const projects: Project[] = [
   {
     slug: 'the-food-crew',
     title: 'The Food Crew',
-    tagline: 'Full-stack restaurant discovery platform with admin ops.',
+    tagline: 'Multi-city restaurant showcase with location stories and reservations.',
     genre: 'Full-stack',
-    techStack: ['Next.js', 'TypeScript', 'Tailwind', 'Prisma', 'MySQL'],
+    techStack: ['Node.js', 'Express', 'Handlebars', 'MySQL', 'Tailwind'],
     status: 'Online',
-    difficulty: 'Medium',
-    shortDescription: 'Menu browsing, user auth, and order workflows crafted for neighborhood pop-ups.',
+    shortDescription: 'Server-rendered dining hub featuring city-specific menus, stories, and contact/reservation flows.',
     coverImage: '',
     githubUrl: 'https://github.com/riju17/The-Food-Crew',
     demoUrl: 'https://the-food-crew.vercel.app',
-    objective: 'Give small crews a polished, mobile-first digital home without touching code.',
-    approach: 'Next.js app router + Prisma/MySQL backbone, with CMS-like dashboards for managing menus and blog drops.',
-    architecture: 'Next.js UI → API routes → Prisma ORM → PlanetScale/MySQL, plus Vercel edge caching for fast reads.',
-    role: 'Sole engineer/designer: led UX, built auth, order flows, and admin tooling.',
+    objective:
+      'A multi-city restaurant showcase that lets visitors explore location-specific menus, read each city’s culinary story, and reach reservation/contact pages via a clean Express-Handlebars interface.',
+    approach:
+      'Node.js + Express serving Handlebars templates backed by MySQL for structured interactions (reservations today, auth flows later). Static assets and media live in /public for responsive, media-rich UI.',
+    architecture:
+      'Browser → Express (index.js routes) → Handlebars views → MySQL for users/reservations; static assets served from /public alongside the views.',
+    architectureDiagram: [
+      ['Browser', 'Express.js (index.js routes)', 'Handlebars views (city pages)', 'Public assets (images/JS/CSS)'],
+      ['Express.js (index.js routes)', 'MySQL (users/reservations)']
+    ],
+    role:
+      'Designed, developed, and deployed the full-stack app—routing, dynamic templating, MySQL integration, and project structure to enable extendable restaurant pages and future authentication.',
     highlights: [
-      'Responsive UI themed for culinary storytelling',
-      'Role-based dashboards for staff vs. visitors',
-      'Deployed on Vercel with CI/CD from GitHub'
+      'Multi-city restaurant presentation with location-specific content',
+      'Dynamic Handlebars views for reusable UI shells',
+      'Express routing with static asset handling from /public',
+      'MySQL-backed reservations with room for login/signup expansion'
     ],
     gallery: ['', '']
   },
@@ -53,7 +61,6 @@ export const projects: Project[] = [
     genre: 'Enterprise',
     techStack: ['Next.js', 'Node.js', 'MongoDB', 'Tailwind', 'Redux'],
     status: 'Online',
-    difficulty: 'Hard',
     shortDescription: 'Full workflow suite modernizing hospital intake, records, and finance dashboards.',
     coverImage: '',
     githubUrl: 'https://github.com/riju17/Advanced-Hospital-Management-System',
@@ -76,7 +83,6 @@ export const projects: Project[] = [
     genre: 'Computer Vision',
     techStack: ['Python', 'TensorFlow', 'Next.js', 'FastAPI'],
     status: 'In Progress',
-    difficulty: 'Hard',
     shortDescription: 'Streams patient ECG data into ML models to flag arrhythmias and surface alerts to clinicians.',
     coverImage: '',
     githubUrl: 'https://github.com/riju17/Arrhythmia-Detection',
@@ -94,7 +100,6 @@ export const projects: Project[] = [
     genre: 'E-commerce',
     techStack: ['Next.js', 'Stripe', 'Sanity CMS', 'Tailwind'],
     status: 'Online',
-    difficulty: 'Medium',
     shortDescription: 'Immersive catalog with AR-inspired gallery, cart, and checkout built for interior designers.',
     coverImage: '',
     githubUrl: 'https://github.com/riju17/Furniture-Shop',
@@ -111,69 +116,120 @@ export const projects: Project[] = [
     gallery: ['', '']
   },
   {
-    slug: 'adult-health-care-app',
-    title: 'Adult Health Care App',
-    tagline: 'Wellness companion for monitoring vitals, meds, and care plans.',
+    slug: 'elderly-care-app',
+    title: 'Elderly Care App',
+    tagline: 'Medication reminders, SOS, vitals, and documents in one Flutter app.',
     genre: 'Health Tech',
-    techStack: ['React Native', 'Next.js', 'Firebase', 'Python'],
-    status: 'Online',
-    difficulty: 'Medium',
-    shortDescription: 'Cross-platform experience for adults & caretakers to log vitals, chat with doctors, and manage meds.',
+    techStack: ['Flutter', 'Dart', 'sqflite', 'shared_preferences', 'Firebase (Auth/Firestore/Storage)', 'ML Vision'],
+    status: 'In Progress',
+    shortDescription: 'Offline-first elderly support app with reminders, SOS flows, vitals tracking, and caregiver signals.',
     coverImage: '',
-    githubUrl: 'https://github.com/riju17/Adult-Health-Care-App',
-    objective: 'Provide aging communities a friendly app that keeps families and physicians in sync.',
-    approach: 'React Native mobile client paired with a Next.js admin portal, Firebase auth, and Python services for analytics.',
-    architecture: 'Mobile app ↔ Firebase RTDB ↔ Next.js dashboard + Python insights microservice.',
-    role: 'Product + engineering lead: prototyped flows, implemented messaging, vitals tracking, and notification logic.',
+    githubUrl: 'https://github.com/riju17/Elderly-Care-App',
+    objective:
+      'Build a real-time elderly care app that centralizes meds, vitals, contacts, documents, and hospital info so seniors stay independent and caregivers get timely updates.',
+    approach:
+      'Flutter (Material) app with offline-first storage (sqflite + shared_preferences + caching) plus Firebase (Auth/Firestore/Storage + ML Vision) for sync; integrates device services for SOS, location, calling/SMS, and document capture.',
+    architecture:
+      'UI layer (Flutter screens/widgets) → Service layer (get_it locator: notifications, SOS, location, messaging, routing, file system) → Data layer (local sqflite + preferences/cache + Firebase Auth/Firestore/Storage); optional TomTom/OpenCage for hospital locator and Jitsi for video calls; companion caregiver app mirrors critical signals.',
+    architectureDiagram: [
+      ['Camera/Device inputs', 'Service layer (notifications, location, comms)', 'Data layer: sqflite/shared_prefs + Firebase'],
+      ['UI layer (reminders, vitals, docs, SOS)', 'Companion app signals']
+    ],
+    role:
+      'Built end-to-end Flutter experience: screens/flows, reminders/alarms, SOS workflows, local persistence, Firebase modules, and integration of location/maps and communication services.',
     highlights: [
-      'Medication reminders with caregiver acknowledgements',
-      'Pulse/BP charts with anomaly alerts',
-      'Secure messaging + visit journaling'
+      'Medication reminders with multi-slot alarms, confirmations, missed-dose alerts',
+      'SOS flow notifying contacts with live location/context',
+      'Hospital locator with routing + reverse geocoding',
+      'Vitals tracking (sleep, weight, BP, sugar) with charts',
+      'Notes/document storage for prescriptions/IDs/discharge summaries',
+      'Jitsi video calls for urgent check-ins'
     ],
     gallery: ['', '']
   },
   {
     slug: 'booktraker',
     title: 'BookTraker',
-    tagline: 'Minimalist reading tracker with stats, notes, and cover art grids.',
+    tagline: 'Offline-first personal library dashboard built with Streamlit.',
     genre: 'Productivity',
-    techStack: ['Next.js', 'Supabase', 'Tailwind', 'Chart.js'],
+    techStack: ['Python', 'Streamlit', 'SQLite'],
     status: 'In Progress',
-    difficulty: 'Easy',
-    shortDescription: 'Log what you’re reading, capture quotes, and visualize pace with playful charts.',
+    shortDescription: 'Local-first app to add books, log sessions, track goals, and manage reading habits.',
     coverImage: '',
     githubUrl: 'https://github.com/riju17/BookTraker',
-    objective: 'Make reading logs feel as beautiful as the books themselves rather than spreadsheet chores.',
-    approach: 'Next.js frontend + Supabase auth/db, dynamic bookshelves, and data viz for pages per day + genre mix.',
-    architecture: 'Next.js app router → Supabase (auth + tables) → Chart.js visualizations, with ISR for sharing shelves.',
-    role: 'Designer/developer building the UX, data schema, and analytics.',
+    demoUrl: 'https://booktraker-ckegkdgebgwzlapxthtsp2.streamlit.app',
+    objective:
+      'Offline-first personal library dashboard that lets readers manage books, sessions, goals, and backups locally with a persistent SQLite database.',
+    approach:
+      'Streamlit web app that loads/visualizes reading data in real time, supports CSV import/export, and keeps everything running locally for privacy.',
+    architecture:
+      'Browser-rendered Streamlit UI ↔ app.py (core logic) ↔ SQLite for persistent storage; CSV import/export for backups.',
+    architectureDiagram: [
+      ['Browser (Streamlit UI)', 'app.py (core logic)', 'SQLite (books, sessions, goals)'],
+      ['CSV import/export', 'app.py (import/export handlers)']
+    ],
+    role:
+      'Designed and developed the Streamlit interface, SQLite schema, reading log features, goal tracking, CSV export/import, and deployment readiness.',
     highlights: [
-      'Mood-based bookshelves & quote capture',
-      'Progress charts by month/genre',
-      'Shareable public profile for reading lists'
+      'Offline-first Streamlit dashboard for personal reading data',
+      'Persistent SQLite database storing books and sessions',
+      'CSV export/import for backups or transfers',
+      'Simple deployment with Procfile for Render/Heroku'
     ],
     gallery: ['', '']
   },
   {
     slug: 'postcards',
-    title: 'Postcards',
-    tagline: 'Generative typography postcard builder for sending tiny digital love notes.',
-    genre: 'Creative Tech',
-    techStack: ['Next.js', 'WebGL', 'Framer Motion', 'Cloudinary'],
+    title: 'Winged Wonder',
+    tagline: 'Winged Wonders — a static postcard exhibit of bird stories.',
+    genre: 'Static Web',
+    techStack: ['HTML', 'CSS', 'JavaScript', 'GSAP'],
     status: 'Online',
-    difficulty: 'Medium',
-    shortDescription: 'Compose animated postcards with custom gradients, fonts, and motion stickers, then share or print.',
+    shortDescription: 'Static microsite of postcard-style bird chapters with responsive layouts and gentle animations.',
     coverImage: '',
     githubUrl: 'https://github.com/riju17/Postcards',
-    demoUrl: 'https://postcards.riju.dev',
-    objective: 'Make it ridiculously fun to send artful notes that feel tactile without opening Illustrator.',
-    approach: 'Next.js canvas playground powered by WebGL shaders, asset uploads via Cloudinary, and Framer Motion exports.',
-    architecture: 'Next.js client-side editor → URL encoded scene data → API routes for renders/storage in Cloudinary.',
-    role: 'Product + creative developer handling shader experiments, UI polish, and shareable exports.',
+    demoUrl: 'https://tourmaline-lamington-88e1d0.netlify.app',
+    objective:
+      'A static microsite titled “Winged Wonders – Birds Postcard Exhibit” that walks users through curated bird stories via interactive postcard chapters and imagery.',
+    approach:
+      'Pure HTML/CSS/JS with GSAP for smooth transitions, responsive layouts for postcard chapters, and embedded imagery/QR assets — no backend required.',
+    architecture:
+      'Browser loads static pages (index + chapter HTML) and asset bundles; CSS/JS drive layout and animations; images/QRs are embedded for storytelling; deployable to any static host.',
+    role:
+      'Designed and implemented the structure, visual design, GSAP animations, chapter organization, and asset management for the static exhibit.',
     highlights: [
-      'Live 3D gradient controls + typography library',
-      'Animated exports to GIF/MP4',
-      'Community gallery with remix links'
+      'Responsive static microsite with postcard chapters',
+      'Custom bird galleries for portrait and landscape imagery',
+      'GSAP-powered scroll/timeline animations for reveals',
+      'QR codes integrated to link physical signage to digital content',
+      'Deployable on GitHub Pages or any static host'
+    ],
+    gallery: ['', '']
+  },
+  {
+    slug: 'indian-sign-language-mlpfnn',
+    title: 'Indian Sign Language with MLPFNN',
+    tagline: 'Real-time ISL A–Z gesture recognition with lightweight hand landmarks.',
+    genre: 'AI / Computer Vision',
+    techStack: ['Python', 'MediaPipe', 'TensorFlow/Keras', 'OpenCV', 'NumPy'],
+    status: 'In Progress',
+    shortDescription: 'MediaPipe landmark features into an MLP classifier for fast Indian Sign Language A–Z recognition.',
+    coverImage: '',
+    githubUrl: 'https://github.com/riju17/Indian_SignLanguage_with_MLPFNN',
+    objective:
+      'Build a real-time Indian Sign Language (ISL) recognition system using 42 hand-landmark features to classify A–Z signs efficiently on modest hardware.',
+    approach:
+      'Use MediaPipe to extract 21 hand keypoints (42 numeric features), feed them into an MLP/MLPFNN classifier, and train on labeled ISL static sign data; plan extensions for dynamic signs, TTS, and multi-hand support.',
+    architecture:
+      'Camera frame → MediaPipe hand keypoints (42-dim feature vector) → MLP classifier (TensorFlow/Keras) → A–Z class → optional text/speech output.',
+    role:
+      'Implemented end-to-end pipeline: MediaPipe configuration, feature engineering, MLPFNN design/training, inference integration, and performance evaluation.',
+    highlights: [
+      'Lightweight real-time classifier using 42 hand landmark features',
+      'MediaPipe-powered keypoint extraction without heavy preprocessing',
+      'Trained/validated on labeled ISL alphabet dataset',
+      'Clear project structure with training and evaluation scripts',
+      'Designed for future dynamic gestures and text-to-speech output'
     ],
     gallery: ['', '']
   }
