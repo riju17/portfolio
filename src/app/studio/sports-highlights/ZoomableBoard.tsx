@@ -13,16 +13,19 @@ type MockImage = {
 
 type Props = {
   images: MockImage[];
+  initialScale?: number;
 };
 
 /**
  * ZoomableBoard renders scrollable mockups with zoom controls.
  */
-export default function ZoomableBoard({ images }: Props) {
-  const [scale, setScale] = useState(0.2);
+export default function ZoomableBoard({ images, initialScale = 0.2 }: Props) {
+  const minScale = 0.2;
+  const maxScale = 2.5;
+  const [scale, setScale] = useState(initialScale);
 
   const setZoom = (next: number) => {
-    setScale(Math.min(2.5, Math.max(0.2, Number(next.toFixed(2)))));
+    setScale(Math.min(maxScale, Math.max(minScale, Number(next.toFixed(2)))));
   };
 
   return (

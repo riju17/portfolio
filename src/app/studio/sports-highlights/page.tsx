@@ -3,11 +3,11 @@ import Image from 'next/image';
 import ZoomableBoard from './ZoomableBoard';
 
 export const metadata = {
-  title: 'Sports Highlights — Case Study'
+  title: 'Sportify — Case Study'
 };
 
 /**
- * Sports Highlights case study: narrative sections plus a MacBook-framed video that plays on hover.
+ * Sportify case study: narrative sections plus a scrollable mockup board.
  */
 export default function SportsHighlightsPage() {
   return (
@@ -15,7 +15,7 @@ export default function SportsHighlightsPage() {
       <div className="mx-auto max-w-5xl px-4 py-14 text-white md:px-6 md:py-16">
         <div className="studio-coral-card rounded-3xl p-8 shadow-2xl">
           <p className="text-sm uppercase tracking-[0.5em] text-white/60">Case study</p>
-          <h1 className="mt-3 text-4xl font-display">Sports Highlights Reel</h1>
+          <h1 className="mt-3 text-4xl font-display">Sportify</h1>
           <p className="mt-3 text-white/70 max-w-3xl">
             A kinetic sports recap that blends fast cuts, scoreboard overlays, and court-side audio to keep viewers locked in.
           </p>

@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import MobileVideoPlayer from '@/components/MobileVideoPlayer';
+import ZoomableBoard from '../sports-highlights/ZoomableBoard';
 
 export const metadata = {
   title: 'Academy Management — Case Study'
@@ -56,27 +56,23 @@ export default function AcademyManagementPage() {
         <section className="mt-12 space-y-4">
           <div className="flex flex-wrap items-center justify-between gap-3">
             <div>
-              <p className="text-sm uppercase tracking-[0.4em] text-white/60">Watch</p>
-              <h3 className="text-2xl font-display">Iphone preview (hover to play)</h3>
+              <p className="text-sm uppercase tracking-[0.4em] text-white/60">Sample design</p>
+              <h3 className="text-2xl font-display">Screen preview</h3>
             </div>
-            <p className="text-xs uppercase tracking-[0.3em] text-white/50">Video stays paused until hover</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-white/50">Scroll and zoom inside the frame</p>
           </div>
-          <div className="grid gap-6 md:grid-cols-[0.6fr_1fr] items-start">
-            <div className="device-mobile">
-              <MobileVideoPlayer src="/Academymanagement.mov" />
-              <div className="device-mobile-base" />
-            </div>
-            <div className="rounded-2xl border border-rose-100/80 bg-gradient-to-br from-[#ffe9f2] via-white to-[#ffd6e0] p-5 text-black shadow-[0_18px_40px_rgba(240,80,120,0.18)] ring-1 ring-rose-200/70 text-sm leading-relaxed">
-              <h4 className="text-xl font-display text-black">Playback notes</h4>
-              <p className="mt-2">
-                Hover to play the mobile demo. The video resets when you leave the frame so viewers can replay from the start without controls.
-              </p>
-              <p className="mt-3">
-                Add a short highlight list here: onboarding, attendance tap flow, payments, PDF export. Include runtime and key metrics once ready.
-              </p>
-            </div>
-          </div>
-          <p className="text-xs text-white/60">Replace the video source with your Academy demo (drop the file in /public and update the path).</p>
+          <ZoomableBoard
+            images={[
+              {
+                src: '/UIUX/academy management/academy.png',
+                alt: 'Academy management mockup',
+                width: 1600,
+                height: 3200,
+                priority: true
+              }
+            ]}
+            initialScale={1}
+          />
         </section>
 
         <section className="mt-12 grid gap-6 md:grid-cols-2">

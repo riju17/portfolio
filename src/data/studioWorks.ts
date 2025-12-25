@@ -9,7 +9,7 @@ export type StudioWork = {
 export const studioWorks: StudioWork[] = [
   {
     id: 'w1',
-    title: 'Sports Highlights',
+    title: 'Sportify',
     image: '/UIUX/Sportify/Sportify%20main.jpg',
     link: '/studio/sports-highlights'
   },
@@ -29,19 +29,19 @@ export const studioWorks: StudioWork[] = [
     id: 'w4',
     title: 'Jobbiz',
     image: '/UIUX/jobbiz/jobbiz.png',
-    link: '/UIUX/jobbiz/jobbiz.png'
+    link: '/studio/jobbiz'
   },
   {
     id: 'w5',
     title: 'Move On',
     image: '/UIUX/move%20on/Moveon.png',
-    link: '/UIUX/move%20on/Moveon.png'
+    link: '/studio/move-on'
   },
   {
     id: 'w6',
     title: 'Plan My Trip',
     image: '/UIUX/plan%20my%20trip/planmytrip.png',
-    link: '/UIUX/plan%20my%20trip/planmytrip.png'
+    link: '/studio/plan-my-trip'
   }
 ];
 
