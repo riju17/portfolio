@@ -278,14 +278,14 @@ export const clients: Client[] = [
       }
     ],
     mockups: [
-      { title: 'Branding Tags', src: '/Kala Katha branding/Branding tags.png' },
-      { title: 'Sticker Pack', src: '/Kala Katha branding/Stickers.png' },
-      { title: 'Thank You Card', src: '/Kala Katha branding/Thank you card.png' },
-      { title: 'Visiting Card', src: '/Kala Katha branding/Visiting card.png' },
-      { title: 'Packaging Tape', src: '/Kala Katha branding/packaging tape.png' },
-      { title: 'Ink Stamp', src: '/Kala Katha branding/ink stamp.png' },
-      { title: 'Complete Mockup 01', src: '/Kala Katha branding/complete mockup1.png' },
-      { title: 'Complete Mockup 02', src: '/Kala Katha branding/complete mockup2.png' }
+      { title: 'Branding Tags', src: '/Kala%20Katha%20branding/Branding%20tags.png' },
+      { title: 'Sticker Pack', src: '/Kala%20Katha%20branding/Stickers.png' },
+      { title: 'Thank You Card', src: '/Kala%20Katha%20branding/Thank%20you%20card.png' },
+      { title: 'Visiting Card', src: '/Kala%20Katha%20branding/Visiting%20card.png' },
+      { title: 'Packaging Tape', src: '/Kala%20Katha%20branding/packaging%20tape.png' },
+      { title: 'Ink Stamp', src: '/Kala%20Katha%20branding/ink%20stamp.png' },
+      { title: 'Complete Mockup 01', src: '/Kala%20Katha%20branding/complete%20mockup1.png' },
+      { title: 'Complete Mockup 02', src: '/Kala%20Katha%20branding/complete%20mockup2.png' }
     ],
     story: {
       context:
