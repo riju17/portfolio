@@ -44,7 +44,7 @@ export const clients: Client[] = [
       { name: 'Silver', hex: '#CCCCCC' }
     ],
     typography: [
-      { label: 'Display', family: 'Bebas Neue / Anton', sample: 'SPORTIFY 2165' },
+      { label: 'Display', family: 'Bebas Neue / Anton', sample: 'BESPORTIFY' },
       { label: 'Body', family: 'Inter / Space Grotesk', sample: 'Captions, analysis notes, stat overlays.' }
     ],
     logos: [
@@ -54,17 +54,17 @@ export const clients: Client[] = [
     ],
     patternSystemAlbum: [
       {
-        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png',
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_jt7mcjjt7mcjjt7m.png',
         label: 'Pattern 01 · Hero Net',
         description: 'Flagship weave used across hero frames and broadcast backgrounds.'
       },
       {
-        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-2.png',
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf.png',
         label: 'Pattern 02 · Diagonal Grid',
         description: 'Sharp diagonal grid that nods to court markings and fast play.'
       },
       {
-        src: '/Besportify/Pattern System/Gemini_Generated_Image_jt7mcjjt7mcjjt7m.png',
+        src: '/Besportify/Pattern System/Gemini_Generated_Image_7gyftm7gyftm7gyf-2.png',
         label: 'Pattern 03 · Contrast Motif',
         description: 'High-contrast motif for jersey inserts, stickers, and motion wipes.'
       },
@@ -89,43 +89,43 @@ export const clients: Client[] = [
       {
         title: 'UI mockups',
         items: [
-          { title: 'Dashboard Overview', src: '/Besportify/UI mockups/Gemini_Generated_Image_9xjiij9xjiij9xji.png' },
-          { title: 'Dashboard Variation', src: '/Besportify/UI mockups/Gemini_Generated_Image_9xjiij9xjiij9xji-2.png' },
-          { title: 'Player Profile', src: '/Besportify/UI mockups/Gemini_Generated_Image_ajzg80ajzg80ajzg.png' },
-          { title: 'Match Insights', src: '/Besportify/UI mockups/Gemini_Generated_Image_btaf8hbtaf8hbtaf.png' },
-          { title: 'Live Tracker', src: '/Besportify/UI mockups/Gemini_Generated_Image_h4irz9h4irz9h4ir.png' },
-          { title: 'Mobile Screens', src: '/Besportify/UI mockups/Gemini_Generated_Image_hosa40hosa40hosa.png' },
-          { title: 'Lineup Panel', src: '/Besportify/UI mockups/Gemini_Generated_Image_lpne9tlpne9tlpne.png' },
-          { title: 'Schedule Grid', src: '/Besportify/UI mockups/Gemini_Generated_Image_mpnyrdmpnyrdmpny.png' }
+          { title: 'Dashboard Overview', src: '/Besportify/UI mockups/dashboard.png' },
+          { title: 'Coach Analysis Sheet', src: '/Besportify/UI mockups/coach analysis sheet.png' },
+          { title: 'Player Profile', src: '/Besportify/UI mockups/Player profile.png' },
+          { title: 'Match Insights', src: '/Besportify/UI mockups/Match insights.png' },
+          { title: 'Backdrop', src: '/Besportify/UI mockups/backdrop.png' },
+          { title: 'UI Mockups', src: '/Besportify/UI mockups/mockups.png' },
+          { title: 'UI Mockup Alt', src: '/Besportify/UI mockups/mockup2.png' },
+          { title: 'Merch Mockup', src: '/Besportify/UI mockups/Merch mockup.png' }
         ]
       },
       {
         title: 'Printables mockups',
         items: [
-          { title: 'Flyer Stack', src: '/Besportify/Printables mockups/Gemini_Generated_Image_cw4czrcw4czrcw4c.png' },
-          { title: 'Poster Set', src: '/Besportify/Printables mockups/Gemini_Generated_Image_ocx239ocx239ocx2.png' },
-          { title: 'Tickets', src: '/Besportify/Printables mockups/Gemini_Generated_Image_sxkm5wsxkm5wsxkm.png' },
-          { title: 'Event Badges', src: '/Besportify/Printables mockups/Gemini_Generated_Image_triklbtriklbtrik.png' },
-          { title: 'Magazine Spread', src: '/Besportify/Printables mockups/Gemini_Generated_Image_yq62axyq62axyq62.png' }
+          { title: 'Certificate', src: '/Besportify/Printables mockups/certificate.png' },
+          { title: 'Visiting Card', src: '/Besportify/Printables mockups/visiting card.png' },
+          { title: 'Analysis Sheet', src: '/Besportify/Printables mockups/analysis sheet mockup.png' },
+          { title: 'Back Card', src: '/Besportify/Printables mockups/back card.png' },
+          { title: 'Analytics UI', src: '/Besportify/Printables mockups/analytics ui.png' }
         ]
       },
       {
         title: 'Merch',
         items: [
-          { title: 'Jersey Concept', src: '/Besportify/Merch /Gemini_Generated_Image_qo2sqbqo2sqbqo2s.png' },
-          { title: 'Jersey Alt Color', src: '/Besportify/Merch /Gemini_Generated_Image_qo2sqbqo2sqbqo2s-2.png' },
-          { title: 'Jersey Detail', src: '/Besportify/Merch /Gemini_Generated_Image_qo2sqbqo2sqbqo2s-3.png' },
-          { title: 'Cap + Scarf', src: '/Besportify/Merch /Gemini_Generated_Image_sc4gsssc4gsssc4g.png' },
-          { title: 'Stadium Merch Table', src: '/Besportify/Merch /Gemini_Generated_Image_dysjcjdysjcjdysj.png' },
-          { title: 'Hoodie Lockup', src: '/Besportify/Merch /Gemini_Generated_Image_c6l6suc6l6suc6l6.png' },
-          { title: 'Jacket Concept', src: '/Besportify/Merch /Gemini_Generated_Image_6e8yrk6e8yrk6e8y.png' },
-          { title: 'Cap Detail', src: '/Besportify/Merch /Gemini_Generated_Image_5pzh845pzh845pzh.png' }
+          { title: 'T-Shirt', src: '/Besportify/Merch /tshirt.png' },
+          { title: 'T-Shirt Alt', src: '/Besportify/Merch /tshirt2.png' },
+          { title: 'Cap', src: '/Besportify/Merch /cap.png' },
+          { title: 'Bottle', src: '/Besportify/Merch /bottle.png' },
+          { title: 'Notebook', src: '/Besportify/Merch /notebook.png' },
+          { title: 'ID Card', src: '/Besportify/Merch /id card.png' },
+          { title: 'Complete Mockup 1', src: '/Besportify/Merch /completemockup1.png' },
+          { title: 'Complete Mockup 2', src: '/Besportify/Merch /complete mockup2.png' }
         ]
       }
     ],
     story: {
       context:
-        'Sportify 2165 shines a light on grassroots cricket, street matches, and underdog athlete stories via fast-paced analysis.',
+        'Besportify shines a light on grassroots cricket, street matches, and underdog athlete stories via fast-paced analysis.',
       challenge:
         'Build a visual system that feels professional like broadcast networks yet relatable like street cricket for thumbnails, shorts, lives, and commentary.',
       approach:
@@ -138,16 +138,15 @@ export const clients: Client[] = [
     slug: 'kalam-katha',
     name: 'Kalam Katha',
     shortDescription: 'Indian folk tales and mythological stories brought to life on YouTube.',
-    year: '2023–2025',
+    year: '2020–present',
     services: ['Editorial', 'Digital', 'Social Design'],
     tools: ['Figma', 'Illustrator', 'Photoshop', 'After Effects', 'Premiere Pro'],
     heroImage: '/kalamkatha.PNG',
     palette: [
-      { name: 'Kesar', hex: '#F6A848' },
-      { name: 'Koyal Black', hex: '#1A1A1A' },
-      { name: 'Turmeric Sand', hex: '#E3C078' },
-      { name: 'Peepal Green', hex: '#4F704B' },
-      { name: 'Gulabi Tint', hex: '#C7668C' }
+      { name: 'Mint Green (Soft)', hex: '#DCEBE2' },
+      { name: 'Aqua Teal', hex: '#8FBFBA' },
+      { name: 'Muted Teal', hex: '#7FAEAA' },
+      { name: 'Peach Pastel', hex: '#F2C1A4' }
     ],
     typography: [
       { label: 'Display', family: 'Poppins Bold', sample: 'Kalam Katha Stories' },
@@ -155,14 +154,23 @@ export const clients: Client[] = [
     ],
     logos: [
       { label: 'Primary Logo', src: '/kalamkatha.PNG' },
-      { label: 'Icon / Badge', src: '/Kalam Katha/Gemini_Generated_Image_7fzulc7fzulc7fzu.png' },
-      { label: 'Pattern System', src: '/Kalam Katha/Gemini_Generated_Image_4fu71e4fu71e4fu7.png' }
+      { label: 'Icon / Badge', src: '/Kalam%20Katha/bookmark.png' },
+      { label: 'Pattern System', src: '/Kalam%20Katha/pattern%20sheet.png' }
+    ],
+    iconBadgeAlbum: [
+      { src: '/Kalam%20Katha/elemt1.png', label: 'Element 1', description: 'Decorative motif used in headers and cards.' },
+      { src: '/Kalam%20Katha/element2.png', label: 'Element 2', description: 'Supporting accent for chapter dividers.' },
+      { src: '/Kalam%20Katha/element3.png', label: 'Element 3', description: 'Badge/spot illustration for story cues.' },
+      { src: '/Kalam%20Katha/element4.png', label: 'Element 4', description: 'Icon treatment for navigation and CTA labels.' },
+      { src: '/Kalam%20Katha/element5.png', label: 'Element 5', description: 'Floral-inspired accent for layout corners.' }
     ],
     mockups: [
-      { title: 'Story Gallery', src: '/Kalam Katha/Gemini_Generated_Image_j0vwxcj0vwxcj0vw.png' },
-      { title: 'Chapter Card', src: '/Kalam Katha/Gemini_Generated_Image_j0vwxcj0vwxcj0vw copy.png' },
-      { title: 'Motion Sticker Pack', src: '/Kalam Katha/Gemini_Generated_Image_w38hjcw38hjcw38h.png' },
-      { title: 'Social Kit Templates', src: '/Kalam Katha/Gemini_Generated_Image_p2v0jzp2v0jzp2v0.png' }
+      { title: 'Front Card', src: '/Kalam%20Katha/front%20card.png' },
+      { title: 'Backdrop', src: '/Kalam%20Katha/backgdrop.png' },
+      { title: 'Web Mockup', src: '/Kalam%20Katha/web.png' },
+      { title: 'Thank You Card', src: '/Kalam%20Katha/thankyou%20yt%20card.png' },
+      { title: 'Digital Mockup', src: '/Kalam%20Katha/digital%20mcokup.png' },
+      { title: 'Complete Mockup', src: '/Kalam%20Katha/complete%20mockup.png' }
     ],
     story: {
       context: 'Kalam Katha shares traditional Indian stories across YouTube, Shorts, and social feeds.',
