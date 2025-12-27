@@ -187,7 +187,7 @@ export const clients: Client[] = [
     year: '2025',
     services: ['Brand Identity Design','Packaging & Print Design','Pattern & Motif Design'],
     tools: ['Figma', 'Illustrator', 'Photoshop', 'After Effects', 'Canva'],
-    heroImage: '/Kala Katha.jpeg',
+    heroImage: '/Kala%20Katha.jpeg',
     palette: [
       { name: 'Sindoor Red', hex: '#B1282C' },
       { name: 'Kashi Gold', hex: '#C49A43' },
@@ -204,75 +204,75 @@ export const clients: Client[] = [
       }
     ],
     logos: [
-      { label: 'Primary Logo', src: '/Kala Katha.jpeg' },
-      { label: 'Icon / Badge', src: '/Kala Katha.jpeg' },
-      { label: 'Pattern System', src: '/Kala Katha.jpeg' }
+      { label: 'Primary Logo', src: '/Kala%20Katha.jpeg' },
+      { label: 'Icon / Badge', src: '/Kala%20Katha.jpeg' },
+      { label: 'Pattern System', src: '/Kala%20Katha.jpeg' }
     ],
     patternSystemAlbum: [
       {
-        src: '/Kala katha pattern system/ps1.png',
+        src: '/Kala%20katha%20pattern%20system/ps1.png',
         label: 'PS-1 · Core Weave',
         description: 'Hero lattice blending saffron + charcoal strokes, used as the base background for most layouts.'
       },
       {
-        src: '/Kala katha pattern system/ps2.png',
+        src: '/Kala%20katha%20pattern%20system/ps2.png',
         label: 'PS-2 · Lotus Bloom',
         description: 'Radial lotus bloom with teal petals that punctuates intermission slates and CTA blocks.'
       },
       {
-        src: '/Kala katha pattern system/ps3.png',
+        src: '/Kala%20katha%20pattern%20system/ps3.png',
         label: 'PS-3 · Folk Florals',
         description: 'Repeating vine illustration inspired by Mithila murals for long scroll posts and covers.'
       },
       {
-        src: '/Kala katha pattern system/ps4.png',
+        src: '/Kala%20katha%20pattern%20system/ps4.png',
         label: 'PS-4 · Story Window',
         description: 'Golden arch windows referencing temple doorways for chapter dividers and act changes.'
       },
       {
-        src: '/Kala katha pattern system/ps5.png',
+        src: '/Kala%20katha%20pattern%20system/ps5.png',
         label: 'PS-5 · Border Tiles',
         description: 'Checkered tiles that frame thumbnail edges and hold social quote cards.'
       },
       {
-        src: '/Kala katha pattern system/ps6.png',
+        src: '/Kala%20katha%20pattern%20system/ps6.png',
         label: 'PS-6 · Night Sky',
         description: 'Indigo starfield overlay that signals mystery tales and nighttime folktales.'
       },
       {
-        src: '/Kala katha pattern system/ps7.png',
+        src: '/Kala%20katha%20pattern%20system/ps7.png',
         label: 'PS-7 · Glyph Mix', 
         description: 'Loose glyph collage built for reels, sticker packs, and energetic bumpers.'
       }
     ],
     iconBadgeAlbum: [
       {
-        src: '/Kala Katha icons/icon1.jpeg',
+        src: '/Kala%20Katha%20icons/icon1.jpeg',
         label: 'Icon 01 · Story Glyph',
         description: 'Pen-stroke monogram that carries the primary avatar and favicon duties.'
       },
       {
-        src: '/Kala Katha icons/icon2.JPG',
+        src: '/Kala%20Katha%20icons/icon2.JPG',
         label: 'Icon 02 · Stamp Seal',
         description: 'Rounded seal with ornate flourishes used on posters, bumpers, and merch.'
       },
       {
-        src: '/Kala Katha icons/icon3.jpeg',
+        src: '/Kala%20Katha%20icons/icon3.jpeg',
         label: 'Icon 03 · Crescent Badge',
         description: 'Half-moon badge deployed on video lower thirds and info cards.'
       },
       {
-        src: '/Kala Katha icons/icon4.JPG',
+        src: '/Kala%20Katha%20icons/icon4.JPG',
         label: 'Icon 04 · Window Crest',
         description: 'Arched crest mirroring temple windows for mid-roll transitions.'
       },
       {
-        src: '/Kala Katha icons/icon5.JPG',
+        src: '/Kala%20Katha%20icons/icon5.JPG',
         label: 'Icon 05 · Bloom Mark',
         description: 'Lotus-inspired bloom for sticker packs and CTA buttons.'
       },
       {
-        src: '/Kala Katha icons/icon6.JPG',
+        src: '/Kala%20Katha%20icons/icon6.JPG',
         label: 'Icon 06 · Glyph Cluster',
         description: 'Cluster of supporting glyphs dedicated to reels and social avatars.'
       }
