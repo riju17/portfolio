@@ -210,82 +210,82 @@ export const clients: Client[] = [
     ],
     patternSystemAlbum: [
       {
-        src: '/Kala%20katha%20pattern%20system/ps1.png',
+        src: '/Kala%20Katha/%20pattern%20system/ps1.png',
         label: 'PS-1 · Core Weave',
         description: 'Hero lattice blending saffron + charcoal strokes, used as the base background for most layouts.'
       },
       {
-        src: '/Kala%20katha%20pattern%20system/ps2.png',
+        src: '/Kala%20Katha/%20pattern%20system/ps2.png',
         label: 'PS-2 · Lotus Bloom',
         description: 'Radial lotus bloom with teal petals that punctuates intermission slates and CTA blocks.'
       },
       {
-        src: '/Kala%20katha%20pattern%20system/ps3.png',
+        src: '/Kala%20Katha/%20pattern%20system/ps3.png',
         label: 'PS-3 · Folk Florals',
         description: 'Repeating vine illustration inspired by Mithila murals for long scroll posts and covers.'
       },
       {
-        src: '/Kala%20katha%20pattern%20system/ps4.png',
+        src: '/Kala%20Katha/%20pattern%20system/ps4.png',
         label: 'PS-4 · Story Window',
         description: 'Golden arch windows referencing temple doorways for chapter dividers and act changes.'
       },
       {
-        src: '/Kala%20katha%20pattern%20system/ps5.png',
+        src: '/Kala%20Katha/%20pattern%20system/ps5.png',
         label: 'PS-5 · Border Tiles',
         description: 'Checkered tiles that frame thumbnail edges and hold social quote cards.'
       },
       {
-        src: '/Kala%20katha%20pattern%20system/ps6.png',
+        src: '/Kala%20Katha/%20pattern%20system/ps6.png',
         label: 'PS-6 · Night Sky',
         description: 'Indigo starfield overlay that signals mystery tales and nighttime folktales.'
       },
       {
-        src: '/Kala%20katha%20pattern%20system/ps7.png',
+        src: '/Kala%20Katha/%20pattern%20system/ps7.png',
         label: 'PS-7 · Glyph Mix', 
         description: 'Loose glyph collage built for reels, sticker packs, and energetic bumpers.'
       }
     ],
     iconBadgeAlbum: [
       {
-        src: '/Kala%20Katha%20icons/icon1.jpeg',
+        src: '/Kala%20Katha/icons/icon1.jpeg',
         label: 'Icon 01 · Story Glyph',
         description: 'Pen-stroke monogram that carries the primary avatar and favicon duties.'
       },
       {
-        src: '/Kala%20Katha%20icons/icon2.JPG',
+        src: '/Kala%20Katha/icons/icon2.JPG',
         label: 'Icon 02 · Stamp Seal',
         description: 'Rounded seal with ornate flourishes used on posters, bumpers, and merch.'
       },
       {
-        src: '/Kala%20Katha%20icons/icon3.jpeg',
+        src: '/Kala%20Katha/icons/icon3.jpeg',
         label: 'Icon 03 · Crescent Badge',
         description: 'Half-moon badge deployed on video lower thirds and info cards.'
       },
       {
-        src: '/Kala%20Katha%20icons/icon4.JPG',
+        src: '/Kala%20Katha/icons/icon4.JPG',
         label: 'Icon 04 · Window Crest',
         description: 'Arched crest mirroring temple windows for mid-roll transitions.'
       },
       {
-        src: '/Kala%20Katha%20icons/icon5.JPG',
+        src: '/Kala%20Katha/icons/icon5.JPG',
         label: 'Icon 05 · Bloom Mark',
         description: 'Lotus-inspired bloom for sticker packs and CTA buttons.'
       },
       {
-        src: '/Kala%20Katha%20icons/icon6.JPG',
+        src: '/Kala%20Katha/icons/icon6.JPG',
         label: 'Icon 06 · Glyph Cluster',
         description: 'Cluster of supporting glyphs dedicated to reels and social avatars.'
       }
     ],
     mockups: [
-      { title: 'Branding Tags', src: '/Kala%20Katha%20branding/Branding%20tags.png' },
-      { title: 'Sticker Pack', src: '/Kala%20Katha%20branding/Stickers.png' },
-      { title: 'Thank You Card', src: '/Kala%20Katha%20branding/Thank%20you%20card.png' },
-      { title: 'Visiting Card', src: '/Kala%20Katha%20branding/Visiting%20card.png' },
-      { title: 'Packaging Tape', src: '/Kala%20Katha%20branding/packaging%20tape.png' },
-      { title: 'Ink Stamp', src: '/Kala%20Katha%20branding/ink%20stamp.png' },
-      { title: 'Complete Mockup 01', src: '/Kala%20Katha%20branding/complete%20mockup1.png' },
-      { title: 'Complete Mockup 02', src: '/Kala%20Katha%20branding/complete%20mockup2.png' }
+      { title: 'Branding Tags', src: '/Kala%20Katha/branding/Branding%20tags.png' },
+      { title: 'Sticker Pack', src: '/Kala%20Katha/branding/Stickers.png' },
+      { title: 'Thank You Card', src: '/Kala%20Katha/branding/Thank%20you%20card.png' },
+      { title: 'Visiting Card', src: '/Kala%20Katha/branding/Visiting%20card.png' },
+      { title: 'Packaging Tape', src: '/Kala%20Katha/branding/packaging%20tape.png' },
+      { title: 'Ink Stamp', src: '/Kala%20Katha/branding/ink%20stamp.png' },
+      { title: 'Complete Mockup 01', src: '/Kala%20Katha/branding/complete%20mockup1.png' },
+      { title: 'Complete Mockup 02', src: '/Kala%20Katha/branding/complete%20mockup2.png' }
     ],
     story: {
       context:
